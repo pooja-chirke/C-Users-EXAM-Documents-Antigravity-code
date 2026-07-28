@@ -1,0 +1,24 @@
+{
+  "name": "vjti-hoc-2027-conference",
+  "version": "1.0.0",
+  "description": "Full Stack Conference Management System for VJTI HOC 2027 (Quantum Computing, AI & HPC)",
+  "private": true,
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:run": "cd backend && ./mvnw spring-boot:run"
+  },
+  "keywords": [
+    "VJTI",
+    "Conference Management",
+    "HOC 2027",
+    "Quantum Computing",
+    "Artificial Intelligence",
+    "HPC",
+    "Spring Boot",
+    "React",
+    "MySQL"
+  ],
+  "author": "Veermata Jijabai Technological Institute (VJTI), Mumbai",
+  "license": "MIT"
+}

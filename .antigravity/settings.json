@@ -1,0 +1,11 @@
+{
+  "projectName": "VJTI HOC 2027 Conference Management System",
+  "institute": "Veermata Jijabai Technological Institute (VJTI), Mumbai",
+  "techStack": {
+    "frontend": "React 18, Vite, JavaScript, React Router, Axios, Bootstrap 5, React Hook Form",
+    "backend": "Java 21, Spring Boot 3, Spring Security, JWT, Spring Data JPA, Hibernate, Maven",
+    "database": "MySQL 8.0"
+  },
+  "roles": ["ADMIN", "CHAIR", "REVIEWER", "AUTHOR"],
+  "domains": ["Quantum Computing", "Artificial Intelligence", "High Performance Computing"]
+}
