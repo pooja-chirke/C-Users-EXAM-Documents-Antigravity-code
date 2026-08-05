@@ -1,49 +1,118 @@
 /**
- * VJTI HOC 2027 - Master Main Layout Component
- * 
- * Shared page layout wrapper integrating Navbar, optional page hero header banner,
- * main page content, and Footer.
- * 
- * @file VJTI-HOC-Conference/frontend/src/layouts/MainLayout.jsx
+ * ===========================================================
+ * VJTI HOC 2027
+ * Main Layout
+ * Responsive Layout for
+ * Desktop | Laptop | Tablet | Android | iPhone
+ * ===========================================================
  */
 
-import React from 'react';
-import Navbar from '../components/navbar/Navbar';
-import Footer from '../components/footer/Footer';
+import React from "react";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
-export const MainLayout = ({ children, title, subtitle, badge, fullWidth = false }) => {
+const MainLayout = ({
+  children,
+  title,
+  subtitle,
+  badge,
+  fullWidth = false,
+}) => {
   return (
-    <div className="d-flex flex-column min-vh-100 bg-light">
-      {/* Shared Navigation Header */}
+    <div
+      className="d-flex flex-column min-vh-100 bg-light"
+      style={{
+        width: "100%",
+        overflowX: "hidden",
+      }}
+    >
+      {/* ==========================
+            NAVBAR
+      =========================== */}
+
       <Navbar />
 
-      {/* Optional Inner Page Hero Banner */}
+      {/* ==========================
+         PAGE HEADER (Optional)
+      =========================== */}
+
       {title && (
-        <div className="bg-vjti-navy text-white py-5 border-bottom border-secondary position-relative">
-          <div className="container py-3 text-center">
+        <section
+          className="bg-vjti-navy text-white border-bottom border-secondary"
+          style={{
+            marginTop: "78px",
+            paddingTop: "55px",
+            paddingBottom: "55px",
+          }}
+        >
+          <div className="container text-center">
+
             {badge && (
-              <span className="badge bg-vjti-maroon text-vjti-gold font-monospace border border-warning px-3 py-2 mb-3">
+              <span
+                className="badge bg-vjti-maroon border border-warning text-vjti-gold px-3 py-2 mb-3"
+                style={{
+                  fontSize: "0.9rem",
+                  letterSpacing: "1px",
+                }}
+              >
                 {badge}
               </span>
             )}
-            <h1 className="display-5 fw-bold font-heading text-white mb-2">
+
+            <h1
+              className="fw-bold text-white mb-3"
+              style={{
+                fontSize: "clamp(2rem,5vw,3.5rem)",
+              }}
+            >
               {title}
             </h1>
+
             {subtitle && (
-              <p className="lead text-white-50 max-w-2xl mx-auto mb-0 fs-6">
+              <p
+                className="text-white-50 mx-auto"
+                style={{
+                  maxWidth: "850px",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.8",
+                }}
+              >
                 {subtitle}
               </p>
             )}
           </div>
-        </div>
+        </section>
       )}
 
-      {/* Main Content Area */}
-      <main className="flex-grow-1">
-        {fullWidth ? children : <div className="container py-5">{children}</div>}
+      {/* ==========================
+            MAIN CONTENT
+      =========================== */}
+
+      <main
+        className="flex-grow-1"
+        style={{
+          width: "100%",
+        }}
+      >
+        {fullWidth ? (
+          children
+        ) : (
+          <div
+            className="container"
+            style={{
+              paddingTop: "40px",
+              paddingBottom: "40px",
+            }}
+          >
+            {children}
+          </div>
+        )}
       </main>
 
-      {/* Shared Footer */}
+      {/* ==========================
+             FOOTER
+      =========================== */}
+
       <Footer />
     </div>
   );

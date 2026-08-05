@@ -12,6 +12,7 @@ const CommitteeAccordion = () => (
       <div id="collapsePatrons" className="accordion-collapse collapse show" aria-labelledby="headingPatrons" data-bs-parent="#committeeAccordion">
         <div className="accordion-body">
           <ul className="list-unstyled">
+            <li><strong>Dr. Sunil Luthra</strong> – Director of AICTE , Delhi </li>
             <li><strong>Dr. Sudhir Mehta</strong> – Chairperson, BoG, VJTI</li>
             <li><strong>Dr. S. D. Kore</strong> – Director, VJTI</li>
           </ul>

@@ -12,14 +12,17 @@ import MainLayout from '../../layouts/MainLayout';
 
 export const CommitteePage = () => {
   const patrons = [
+    { name: 'Dr. Sunil Luthra', title: 'Director of the AICTE, New Delhi', role: 'Chief Patron' },
     { name: 'Dr. Sudhir Mehta', title: 'Chairperson, BOG, VJTI', role: 'Chief Patron' },
     { name: 'Dr. S.D.Kore', title: 'Director, VJTI', role: 'Chief Patron' },
   ];
 
   const trackChairs = [
-    { name: 'Dr. Rajesh Sharma', track: 'Quantum Computing Track Chair', affiliation: 'VJTI Mumbai' },
-    { name: 'Prof. Ananya Roy', track: 'AI & Deep Learning Track Chair', affiliation: 'IIT Bombay' },
-    { name: 'Dr. S. K. Mahajan', track: 'HPC & Cloud Systems Track Chair', affiliation: 'VJTI Mumbai' },
+    { name: 'Dr.S.T.Shingade', track: 'Applications for High Performance Computing', affiliation: 'VJTI Mumbai' },
+    { name: 'Dr.S.S.Udmale', track: 'Artificial Intelligence Systems and Applications', affiliation: 'VJTI Mumbai' },
+    { name: 'Dr.V.B.Nikam', track: 'Quantum Computing Systems & Applications', affiliation: 'VJTI Mumbai' },
+    { name: 'Dr.M.R.Shirole', track: 'Optimization Techniques and Intelligent Computing', affiliation: 'VJTI Mumbai' },
+    { name: 'Dr.M.M.Chandane', track: 'Sustainable Development through Advanced Computing', affiliation: 'VJTI Mumbai' },
   ];
 
   const tpcMembers = [
