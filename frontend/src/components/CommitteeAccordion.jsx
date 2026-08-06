@@ -23,17 +23,17 @@ const CommitteeAccordion = () => (
     <div className="accordion-item">
       <h2 className="accordion-header" id="headingChair">
         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChair" aria-expanded="false" aria-controls="collapseChair">
-          Conference Chair
+          Technical Track Chair
         </button>
       </h2>
       <div id="collapseChair" className="accordion-collapse collapse" aria-labelledby="headingChair" data-bs-parent="#committeeAccordion">
         <div className="accordion-body">
           <ul className="list-unstyled">
-            <li>Dr. K. K. Sarode (Dean Academics)</li>
-            <li>Dr. S. P. Borkar (Dean Admin)</li>
             <li>Dr. V. B. Nikam (HoD)</li>
-            <li>Dr. M. R. Shirsole (ICT Infrastructure)</li>
-            <li>Dr. M. M. Chavan (Coordinator GIAN)</li>
+            <li>Dr. M.R.Shirole (Associate Professor)</li>
+            <li>Dr.M.M.Chandan (Associate Professor)</li>
+            <li>Dr.S.T.Shingade (Assistant Professor)</li>
+            <li>Dr.S.S.Udmale (Assistant Professor)</li>
           </ul>
         </div>
       </div>
