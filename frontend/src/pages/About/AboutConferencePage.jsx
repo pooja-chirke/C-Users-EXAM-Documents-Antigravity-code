@@ -27,16 +27,6 @@ const objectives = [
     marathi: "सहभागींस प्रगत संगणन क्षेत्रातील नवीन तंत्रज्ञानाची ओळख करून देणे."
   },
   {
-    icon: "bi-diagram-3",
-    english: "To provide hands-on exposure to OPENMP, MPI and GPGPU tools.",
-    marathi: "ओपनएमपी, एमपीआय आणि ग्राफिक्स प्रक्रिया आधारित प्रोग्रामिंग साधनांचे प्रात्यक्षिक प्रशिक्षण देणे."
-  },
-  {
-    icon: "bi-robot",
-    english: "To provide hands-on exposure to AI and Quantum Computing tools.",
-    marathi: "कृत्रिम बुद्धिमत्ता आणि क्वांटम संगणन साधनांचा प्रत्यक्ष अनुभव देणे."
-  },
-  {
     icon: "bi-translate",
     english: "To encourage technical learning in Marathi language.",
     marathi: "मराठी भाषेत तांत्रिक शिक्षणाला प्रोत्साहन देणे."
@@ -51,32 +41,12 @@ const objectives = [
     english: "To develop awareness about Supercomputing and AI applications.",
     marathi: "महासंगणन आणि कृत्रिम बुद्धिमत्ता आधारित अनुप्रयोगांविषयी जागरूकता निर्माण करणे."
   },
-  {
-    icon: "bi-shield-lock",
-    english: "To introduce participants to secure software practices, web application security, and common cyber-attack vectors.",
-    marathi: "सुरक्षित सॉफ्टवेअर पद्धती, वेब अनुप्रयोग सुरक्षा आणि सामान्य सायबर हल्ल्यांविषयी माहिती देणे."
-  },
-  {
-    icon: "bi-file-earmark-lock",
-    english: "To create awareness about cyber laws, data privacy, digital forensics, and ethical responsibilities in cybersecurity practices.",
-    marathi: "सायबर कायदे, माहिती गोपनीयता, डिजिटल फॉरेन्सिक्स आणि सायबर सुरक्षेतील नैतिक जबाबदाऱ्यांविषयी जागरूकता निर्माण करणे."
-  },
-  {
-    icon: "bi-mortarboard",
-    english: "To enable participants to integrate cybersecurity concepts into teaching, research, laboratory development, and interdisciplinary academic projects.",
-    marathi: "संशोधन, प्रयोगशाळा विकास आणि आंतरशाखीय प्रकल्पांमध्ये प्रगत संगणन तंत्रज्ञान समाविष्ट करण्यास प्रोत्साहन देणे."
-  },
-  {
-    icon: "bi-lightbulb",
-    english: "To encourage research and innovation in emerging areas such as AI-driven cybersecurity, cloud security, IoT security, and cyber threat intelligence.",
-    marathi: "कृत्रिम बुद्धिमत्ता, मेघाधारित संगणन, क्वांटम संगणन आणि उच्च कार्यक्षमता संगणन या उदयोन्मुख क्षेत्रांमध्ये संशोधन व नवोपक्रमाला चालना देणे."
-  }
 ];
 
 export const AboutConferencePage = () => {
   return (
     <MainLayout
-      title="About HOC 2027 Conference"
+      title="About SAQC 2027 Conference"
       subtitle="International Conference on Quantum Computing, Artificial Intelligence and High Performance Computing"
       badge="ABOUT THE CONFERENCE"
     >
@@ -111,7 +81,7 @@ export const AboutConferencePage = () => {
               fontSize: "17px"
             }}
           >
-            This workshop is designed to provide participants with conceptual
+            This Conference is designed to provide participants with conceptual
             understanding and practical exposure to modern computing architectures,
             parallel programming models, AI acceleration techniques, GPU-enabled
             computing, and quantum simulation frameworks. The program focuses on
@@ -242,51 +212,40 @@ export const AboutConferencePage = () => {
 
                 <li className="border-bottom border-secondary pb-3 mb-3">
                   <strong>Dates</strong><br />
-                  <span className="text-vjti-gold">20–22 January 2027</span><br />
+                  <span className="text-vjti-gold">8-9 January 2027</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    दिनांक : २०–२२ जानेवारी २०२७
+                    दिनांक : ८-९ जानेवारी २०२७
                   </small>
                 </li>
 
                 <li className="border-bottom border-secondary pb-3 mb-3">
                   <strong>Format</strong><br />
-                  <span>Hybrid (Offline + Online)</span><br />
+                  <span> Offline Conference</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    स्वरूप : प्रत्यक्ष व ऑनलाइन
+                    स्वरूप : प्रत्यक्ष
                   </small>
                 </li>
 
                 <li className="border-bottom border-secondary pb-3 mb-3">
                   <strong>Submission Deadline</strong><br />
-                  <span>31 October 2026</span><br />
+                  <span>30 September 2026</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    अंतिम दिनांक : ३१ ऑक्टोबर २०२६
+                    अंतिम दिनांक : ३० सप्टेंबर २०२६
                   </small>
                 </li>
 
-                <li>
-                  <strong>Primary Venue</strong><br />
-                  <span>VJTI Campus, Matunga</span><br />
-                  <small
-                    style={{
-                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
-                    }}
-                  >
-                    स्थळ : व्हीजेटीआय कॅम्पस, माटुंगा, मुंबई
-                  </small>
-                </li>
 
               </ul>
 

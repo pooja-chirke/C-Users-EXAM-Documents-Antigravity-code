@@ -11,7 +11,8 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-
+import vjtiLogo from "../../assets/logos/vjticollege.png";
+import "./Navbar.css";
 export const Navbar = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
@@ -36,23 +37,45 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-xl navbar-dark bg-vjti-maroon sticky-top shadow-sm py-2">
+      {/* Banner */}
+
       <div className="container">
-        
+
         {/* Brand Emblem & Logo */}
-        <Link className="navbar-brand d-flex align-items-center gap-2 font-heading" to="/">
-          <div className="bg-vjti-gold text-dark p-2 rounded-3 d-flex align-items-center justify-content-center shadow-sm">
-            <i className="bi bi-cpu-fill fs-4"></i>
-          </div>
+        {/* Brand Logo */}
+        <Link
+          className="navbar-brand d-flex align-items-center gap-3 font-heading"
+          to="/"
+        >
+          <img
+            src={vjtiLogo}
+            alt="VJTI Logo"
+            style={{
+              width: "90px",
+              height: "85px",
+              objectFit: "contain",
+              background: "#fff",
+              borderRadius: "50%",
+              padding: "3px"
+            }}
+          />
+
           <div>
-            <div className="fw-bold fs-5 tracking-tight lh-1">
-              VJTI HOC <span className="text-vjti-gold">2027</span>
+            <div className="fw-bold fs-4 lh-1">
+              VJTI SAQC <span className="text-vjti-gold">2027</span>
             </div>
-            <div className="text-white-50 small mt-1 font-monospace" style={{ fontSize: '0.68rem' }}>
-              Quantum, AI & High Performance Computing
+
+            <div
+              className="text-white-50"
+              style={{
+                fontSize: "0.72rem",
+                letterSpacing: "0.5px",
+              }}
+            >
+
             </div>
           </div>
         </Link>
-
         {/* Mobile Toggle Button */}
         <button
           className="navbar-toggler border-0 shadow-none"
@@ -74,11 +97,10 @@ export const Navbar = () => {
               return (
                 <li className="nav-item" key={link.path}>
                   <Link
-                    className={`nav-link px-2.5 py-1.5 rounded-2 font-medium transition-all ${
-                      isActive
-                        ? 'text-vjti-gold fw-bold active border-bottom border-vjti-gold border-2'
-                        : 'text-white-50 hover-text-white'
-                    }`}
+                    className={`nav-link px-2.5 py-1.5 rounded-2 font-medium transition-all ${isActive
+                      ? 'text-vjti-gold fw-bold active border-bottom border-vjti-gold border-2'
+                      : 'text-white-50 hover-text-white'
+                      }`}
                     to={link.path}
                   >
                     {link.label}

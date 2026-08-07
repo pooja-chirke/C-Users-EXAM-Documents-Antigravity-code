@@ -9,19 +9,19 @@ import "./HomePage.module.css";
 const importantDates = [
   {
     event: "Paper Submission Deadline",
-    date: "October 31, 2026",
+    date: "September 30, 2026",
     badge: "Upcoming",
     statusClass: "bg-primary",
   },
   {
     event: "Notification of Acceptance",
-    date: "November 30, 2026",
+    date: "November 15, 2026",
     badge: "Schedule",
     statusClass: "bg-info text-dark",
   },
   {
     event: "Camera-Ready Paper Due",
-    date: "December 15, 2026",
+    date: "November 30, 2026",
     badge: "Schedule",
     statusClass: "bg-warning text-dark",
   },
@@ -68,7 +68,7 @@ const HomePage = () => {
         <section className="py-5">
 
           <h2 className="display-6 fw-bold font-heading text-vjti-maroon mb-4">
-            Organizing Committee
+            Conference Leadership
           </h2>
 
           <CommitteeAccordion />

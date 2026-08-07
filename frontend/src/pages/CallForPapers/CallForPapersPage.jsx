@@ -152,29 +152,18 @@ export const CallForPapersPage = () => {
                   </span>
                 </li>
 
-                <li className="mb-3">
-                  <strong>Short / Poster Papers:</strong> 4 to 5 pages presenting ongoing
-                  research or work-in-progress.
-                  <br />
-                  <span
-                    style={{
-                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
-                    }}
-                  >
-                    <strong>लघु / पोस्टर संशोधन लेख:</strong> प्रगतीपथावरील संशोधनासाठी ४ ते ५ पाने.
-                  </span>
-                </li>
+
 
                 <li className="mb-3">
                   <strong>Formatting Standard:</strong> Submissions must follow the
-                  standard IEEE double-column conference template.
+                  standard double-column conference template.
                   <br />
                   <span
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    <strong>स्वरूप:</strong> IEEE Double-Column Conference Template चे पालन करणे आवश्यक आहे.
+                    <strong>स्वरूप:</strong> Double-Column Conference Template चे पालन करणे आवश्यक आहे.
                   </span>
                 </li>
 
@@ -187,7 +176,7 @@ export const CallForPapersPage = () => {
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    <strong>फाईल स्वरूप:</strong> ऑनलाइन पोर्टलद्वारे फक्त PDF स्वरूपातील शोधनिबंध स्वीकारले जातील.
+                    <strong>फाईल स्वरूप:</strong> ऑनलाइन पोर्टलद्वारे फक्त PDF स्वरूपातील संशोधन लेख स्वीकारले जातील.
                   </span>
                 </li>
 
@@ -211,7 +200,7 @@ export const CallForPapersPage = () => {
               </h6>
 
               <p className="text-muted leading-relaxed mb-2">
-                HOC 2027 follows a strict Double-Blind Peer Review process. Authors'
+                SAQC 2027 follows a strict Double-Blind Peer Review process. Authors'
                 names, affiliations, acknowledgements, and all self-identifying
                 references must be removed from the initial manuscript before
                 submission.
@@ -226,7 +215,7 @@ export const CallForPapersPage = () => {
                   textAlign: "justify"
                 }}
               >
-                HOC 2027 परिषदेमध्ये दुहेरी-अंध समकक्ष पुनरावलोकन (Double-Blind Peer
+                SAQC 2027 परिषदेमध्ये दुहेरी-अंध समकक्ष पुनरावलोकन (Double-Blind Peer
                 Review) प्रक्रिया अवलंबली जाईल. प्रारंभिक शोधनिबंधामधून लेखकांची
                 नावे, संस्था, आभार प्रदर्शन तसेच लेखकाची ओळख पटवणारे सर्व संदर्भ
                 काढून टाकणे अनिवार्य राहील.
@@ -251,10 +240,10 @@ export const CallForPapersPage = () => {
 
               <p className="text-muted leading-relaxed mb-2">
                 All submitted papers will undergo automated similarity checking using
-                Turnitin / iThenticate. Manuscripts having more than
-                <strong> 15% similarity index </strong>
-                or containing self-plagiarism or dual submission will be rejected
-                without peer review.
+                Turnitin / iThenticate. Manuscripts should have less than
+                <strong> 10% similarity index </strong>
+                and 10 % AI generated content.
+
               </p>
 
               <p
@@ -266,11 +255,9 @@ export const CallForPapersPage = () => {
                   textAlign: "justify"
                 }}
               >
-                सर्व शोधनिबंधांची Turnitin किंवा iThenticate प्रणालीद्वारे
-                साहित्यचौर्य तपासणी करण्यात येईल. <strong>१५% पेक्षा अधिक साम्य निर्देशांक
-                  (Similarity Index)</strong> असलेले, स्व-साहित्यचौर्य (Self-Plagiarism)
-                किंवा दुहेरी सादरीकरण (Dual Submission) आढळलेले शोधनिबंध कोणत्याही
-                पुनरावलोकनाशिवाय थेट नाकारले जातील.
+                सादर केलेल्या सर्व संशोधन लेखांची (Research Papers) Turnitin / iThenticate या सॉफ्टवेअरद्वारे स्वयंचलित समानता (Similarity) तपासणी केली जाईल.
+
+                सादर केलेल्या संशोधन लेखाचा समानता निर्देशांक (Similarity Index) १०% पेक्षा कमी असावा तसेच कृत्रिम बुद्धिमत्तेच्या (AI) साहाय्याने तयार केलेल्या मजकुराचे प्रमाण १०% पेक्षा कमी असणे आवश्यक आहे..
               </p>
             </div>
           </div>
@@ -385,49 +372,49 @@ export const CallForPapersPage = () => {
 
                 <li className="border-bottom border-secondary pb-3 mb-3">
                   <strong>Paper Submission</strong><br />
-                  <span className="text-vjti-gold">31 October 2026</span><br />
+                  <span className="text-vjti-gold">30 September 2026</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    संशोधन लेख सादर करण्याची अंतिम तारीख : ३१ ऑक्टोबर २०२६
+                    संशोधन लेख सादर करण्याची अंतिम तारीख : ३० सप्टेंबर २०२६
                   </small>
                 </li>
 
                 <li className="border-bottom border-secondary pb-3 mb-3">
                   <strong>Acceptance Notification</strong><br />
+                  <span>15 November 2026</span><br />
+                  <small
+                    style={{
+                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
+                    }}
+                  >
+                    स्वीकृतीची सूचना : १५ नोव्हेंबर २०२६
+                  </small>
+                </li>
+
+                <li className="border-bottom border-secondary pb-3 mb-3">
+                  <strong>Camera Ready Submission</strong><br />
                   <span>30 November 2026</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    स्वीकृतीची सूचना : ३० नोव्हेंबर २०२६
-                  </small>
-                </li>
-
-                <li className="border-bottom border-secondary pb-3 mb-3">
-                  <strong>Camera Ready Submission</strong><br />
-                  <span>15 December 2026</span><br />
-                  <small
-                    style={{
-                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
-                    }}
-                  >
-                    अंतिम संशोधन लेख सादर करण्याची तारीख : १५ डिसेंबर २०२६
+                    अंतिम संशोधन लेख सादर करण्याची तारीख : ३० नोव्हेंबर २०२६
                   </small>
                 </li>
 
                 <li>
                   <strong>Conference Dates</strong><br />
-                  <span className="text-vjti-gold">20–22 January 2027</span><br />
+                  <span className="text-vjti-gold">08-09 January 2027</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
                     }}
                   >
-                    परिषदेचा कालावधी : २० ते २२ जानेवारी २०२७
+                    परिषदेचा कालावधी : ०८ ते ०९ जानेवारी २०२७
                   </small>
                 </li>
 
@@ -479,13 +466,13 @@ export const CallForPapersPage = () => {
                 संपर्क साधावा.
               </p>
               <a
-                href="mailto:hoc2027@vjti.ac.in"
+                href="mailto: stshingade@it.vjti.ac.in"
                 className="text-vjti-maroon fw-semibold text-decoration-none"
               >
                 <i className="bi bi-envelope-fill me-2"></i>
 
                 <div>
-                  <div>hoc2027@vjti.ac.in</div>
+                  <div>stshingade@it.vjti.ac.in</div>
 
                   <small
                     style={{

@@ -16,7 +16,7 @@ export const Footer = () => {
     <footer className="bg-vjti-navy text-white-50 pt-5 pb-4 border-top border-secondary mt-auto">
       <div className="container">
         <div className="row g-4 pb-4 border-bottom border-secondary">
-          
+
           {/* Column 1: VJTI & HOC 2027 Branding */}
           <div className="col-lg-4 col-md-6">
             <div className="d-flex align-items-center gap-2 mb-3">
@@ -25,20 +25,17 @@ export const Footer = () => {
               </div>
               <div>
                 <h5 className="fw-bold font-heading text-white mb-0">
-                  VJTI HOC <span className="text-vjti-gold">2027</span>
+                  VJTI SAQC <span className="text-vjti-gold">2027</span>
                 </h5>
                 <span className="text-white-50 small font-monospace">Matunga, Mumbai</span>
               </div>
             </div>
             <p className="small leading-relaxed text-white-50 mb-3">
-              International Conference on Quantum Computing, Artificial Intelligence and High Performance Computing, organized by <strong className="text-white">Veermata Jijabai Technological Institute (VJTI)</strong>, Mumbai.
+              International Conference on Advance Computing(Supercomputing, Artficial Intelligence & Quantum Computing) organized by <strong className="text-white">Veermata Jijabai Technological Institute (VJTI)</strong>, Mumbai.
             </p>
             <div className="d-flex items-center gap-2">
               <span className="badge bg-vjti-maroon text-vjti-gold border border-warning">
-                <i className="bi bi-calendar-event me-1"></i>Jan 20–22, 2027
-              </span>
-              <span className="badge bg-secondary text-white">
-                <i className="bi bi-globe me-1"></i>Hybrid Format
+                <i className="bi bi-calendar-event me-1"></i>Jan 08-09, 2027
               </span>
             </div>
           </div>
@@ -49,7 +46,7 @@ export const Footer = () => {
               Quick Links
             </h6>
             <ul className="list-unstyled small space-y-2 mb-0">
-              <li><Link to="/about" className="text-white-50 text-decoration-none hover-text-white">About HOC 2027</Link></li>
+              <li><Link to="/about" className="text-white-50 text-decoration-none hover-text-white">About SAQC 2027</Link></li>
               <li><Link to="/call-for-papers" className="text-white-50 text-decoration-none hover-text-white">Call for Papers</Link></li>
               <li><Link to="/tracks" className="text-white-50 text-decoration-none hover-text-white">Conference Tracks</Link></li>
               <li><Link to="/committee" className="text-white-50 text-decoration-none hover-text-white">Organizing Committee</Link></li>
@@ -64,11 +61,11 @@ export const Footer = () => {
               Technical Scope
             </h6>
             <ul className="list-unstyled small space-y-2 text-white-50 mb-0">
-              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Quantum Algorithms & Simulators</li>
-              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Generative AI & LLMs</li>
-              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>High Performance Supercomputing</li>
-              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Parallel & GPU Computing</li>
-              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Cyber-Physical Cloud Systems</li>
+              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Application for High Performance Computing</li>
+              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Artificial Intelligent Systems & Applications</li>
+              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Quantum Computing Systems & Applications</li>
+              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Optimization Techniques & Intelligent Computing</li>
+              <li><i className="bi bi-chevron-right text-vjti-gold me-1"></i>Sustainable development for advance computing</li>
             </ul>
           </div>
 
@@ -84,11 +81,12 @@ export const Footer = () => {
               </li>
               <li className="d-flex align-items-center gap-2">
                 <i className="bi bi-envelope-fill text-vjti-gold"></i>
-                <a href="mailto:hoc2027@vjti.ac.in" className="text-white-50 text-decoration-none hover-text-white">hoc2027@vjti.ac.in</a>
+                <a href="mailto: stshingade@it.vjti.ac.in" className="text-white-50 text-decoration-none hover-text-white">stshingade@it.vjti.ac.in</a>
               </li>
               <li className="d-flex align-items-center gap-2">
                 <i className="bi bi-telephone-fill text-vjti-gold"></i>
-                <span>+91 22 2419 8100</span>
+                <span>+363 2265 398 100</span>
+                <span>+91 8793707873</span>
               </li>
             </ul>
           </div>
@@ -105,10 +103,7 @@ export const Footer = () => {
               <span>VJTI Official Website</span>
               <i className="bi bi-box-arrow-up-right small"></i>
             </a>
-            <span>|</span>
-            <Link to="/privacy" className="text-white-50 text-decoration-none hover-text-white">Privacy Policy</Link>
-            <span>|</span>
-            <Link to="/terms" className="text-white-50 text-decoration-none hover-text-white">Terms</Link>
+
           </div>
         </div>
       </div>
