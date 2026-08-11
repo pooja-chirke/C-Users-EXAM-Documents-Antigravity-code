@@ -202,10 +202,10 @@ export const ContactPage = () => {
                   </h6>
 
                   <a
-                    href="mailto:hoc2027@vjti.ac.in"
+                    href="mailto:stshingade@it.vjti.ac.in"
                     className="small text-vjti-gold text-decoration-none fw-semibold"
                   >
-                    hoc2027@vjti.ac.in
+                    stshingade@it.vjti.ac.in
                   </a>
 
                   <p className="extra-small text-white-50 mb-1">
@@ -251,7 +251,7 @@ export const ContactPage = () => {
                   </h6>
 
                   <span className="small text-white font-monospace">
-                    +91 22 2419 8100
+                    +363 8793707873
                   </span>
 
                   <p className="extra-small text-white-50 mb-1">

@@ -779,6 +779,18 @@ export const CommitteePage = () => {
 
       photo: null
     },
+    {
+      name: 'Miss. Pooja Chirke',
+      marathiName: 'कु.पुजा चिरके',
+
+      designation: 'Teaching Assistant',
+      marathiDesignation: 'अध्यापन सहाय्यक',
+
+      role: 'Conference Coordination & Technical Support',
+      marathiRole: 'परिषद समन्वय आणि तांत्रिक सहाय्य',
+
+      photo: null
+    },
 
     {
       name: 'Mr. Pratik Desai',
@@ -1277,7 +1289,7 @@ export const CommitteePage = () => {
               lineHeight: '1.7'
             }}
           >
-            HOC २०२७ ला मार्गदर्शन करणारे प्रतिष्ठित आंतरराष्ट्रीय तज्ज्ञ.
+            SAQC २०२७ ला मार्गदर्शन करणारे प्रतिष्ठित आंतरराष्ट्रीय तज्ज्ञ.
           </p>
 
         </div>
@@ -1591,7 +1603,7 @@ export const CommitteePage = () => {
 
         <p className="text-white-50 mb-2">
           The conference leadership team is committed to conducting
-          HOC 2027 with academic excellence, research integrity and
+          SAQC 2027 with academic excellence, research integrity and
           professional standards.
         </p>
 
@@ -1602,7 +1614,7 @@ export const CommitteePage = () => {
             lineHeight: '1.9'
           }}
         >
-          परिषद नेतृत्व HOC २०२७ चे आयोजन शैक्षणिक उत्कृष्टता,
+          परिषद नेतृत्व SAQC २०२७ चे आयोजन शैक्षणिक उत्कृष्टता,
           संशोधनाची सचोटी आणि व्यावसायिक मानकांसह करण्यासाठी कटिबद्ध आहे.
         </p>
 
