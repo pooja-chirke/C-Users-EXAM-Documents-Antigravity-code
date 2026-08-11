@@ -14,9 +14,64 @@ import MainLayout from '../../layouts/MainLayout';
 export const CallForPapersPage = () => {
   return (
     <MainLayout
-      title="Call for Papers (CFP)"
-      subtitle="Submissions invited for Quantum Computing, Artificial Intelligence & High Performance Computing Tracks"
-      badge="CALL FOR PAPERS 2027"
+      title={
+        <>
+          <div>Call for Papers (CFP)</div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "32px",
+              lineHeight: "1.6",
+              marginTop: "8px",
+              color: "#ffffff"
+            }}
+          >
+            संशोधन लेख सादरीकरणासाठी आवाहन
+          </div>
+        </>
+      }
+
+      subtitle={
+        <>
+          <div>
+            Submissions SAQC invited for Advanced Computing
+            (Supercomputing, Artificial Intelligence & Quantum Computing)
+          </div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "18px",
+              lineHeight: "1.9",
+              marginTop: "12px",
+              color: "rgba(255,255,255,0.75)"
+            }}
+          >
+            SAQC साठी प्रगत संगणन
+            (महासंगणन, कृत्रिम बुद्धिमत्ता आणि क्वांटम संगणन)
+            या विषयांवरील संशोधन लेख सादर करण्यासाठी आवाहन करण्यात येत आहे.
+          </div>
+        </>
+      }
+
+      badge={
+        <>
+          <span>CALL FOR PAPERS 2027</span>
+
+          <span
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              marginLeft: "12px"
+            }}
+          >
+            संशोधन लेख सादरीकरणासाठी आवाहन २०२७
+          </span>
+        </>
+      }
     >
       <div className="row g-4 mb-5">
 
@@ -29,18 +84,22 @@ export const CallForPapersPage = () => {
               </h3>
               <p className="text-muted leading-relaxed mb-2">
                 Authors are invited to submit original, unpublished research papers
-                demonstrating significant contributions in Quantum Computing,
-                Artificial Intelligence, High Performance Computing, Parallel
-                Computing, GPU Computing, and related emerging technologies.
+                demonstrating significant contributions in Application for High Performance computing,
+                Artificial Intelligent Systems & applications,Quantum Computing Systems & Applications,
+                Optimization techniques & intelligent computing, and Sustainable development for Advance
+                Computing.
               </p>
 
               <p
                 className="mb-4"
                 style={{
-                  fontFamily: "'Noto Sans','Segoe UI',sans-serif",
+                  fontFamily: "'Noto Sans', 'Segoe UI', sans-serif",
                   color: "#555",
                   lineHeight: "1.9",
-                  textAlign: "justify"
+                  textAlign: "left",
+                  fontSize: "17px",
+                  wordSpacing: "normal",
+                  letterSpacing: "normal"
                 }}
               >
                 Authors are encouraged to contribute high-quality research papers that
@@ -57,10 +116,21 @@ export const CallForPapersPage = () => {
                   textAlign: "justify"
                 }}
               >
-                लेखकांना क्वांटम संगणन, कृत्रिम बुद्धिमत्ता, उच्च कार्यक्षमता
-                संगणन, समांतर संगणन, ग्राफिक्स प्रक्रिया आधारित संगणन आणि
-                संबंधित आधुनिक तंत्रज्ञान क्षेत्रांतील मौलिक व अप्रकाशित
-                संशोधन निबंध सादर करण्यासाठी आमंत्रित करण्यात येत आहे.
+                लेखकांना उच्च कार्यक्षमता संगणनातील अनुप्रयोग, कृत्रिम बुद्धिमत्ता प्रणाली व त्यांचे अनुप्रयोग, क्वांटम संगणन प्रणाली व त्यांचे अनुप्रयोग, अनुकूलन तंत्रे व बुद्धिमान संगणन तसेच प्रगत संगणनातील शाश्वत विकास या क्षेत्रांमध्ये महत्त्वपूर्ण योगदान देणारे मौलिक व अप्रकाशित संशोधन लेख सादर करण्यासाठी आमंत्रित करण्यात येत आहे.
+              </p>
+              <p
+                className="mb-4"
+                style={{
+                  fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+                  color: "#555",
+                  lineHeight: "2",
+                  textAlign: "justify"
+                }}
+              >
+                लेखकांनी नाविन्यपूर्ण संशोधनाला प्रोत्साहन देणारे, आंतरशाखीय सहकार्याला
+                चालना देणारे तसेच शैक्षणिक व औद्योगिक क्षेत्रातील संगणन तंत्रज्ञानाच्या
+                प्रगतीस हातभार लावणारे उच्च दर्जाचे संशोधन लेख सादर करण्यास प्रोत्साहित
+                केले जाते.
               </p>
 
               {/* Important Note */}

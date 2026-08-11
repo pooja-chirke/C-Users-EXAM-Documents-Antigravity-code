@@ -191,9 +191,63 @@ export const TracksPage = () => {
 
   return (
     <MainLayout
-      title="Technical Tracks & Research Scope"
-      subtitle="Detailed sub-topics across Quantum Computing, Artificial Intelligence & High Performance Computing"
-      badge="DOMAINS & SCOPE"
+      title={
+        <>
+          <div>Technical Tracks & Research Scope</div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "32px",
+              lineHeight: "1.6",
+              marginTop: "8px",
+              color: "#ffffff"
+            }}
+          >
+            तांत्रिक विभाग आणि संशोधनाची व्याप्ती
+          </div>
+        </>
+      }
+
+      subtitle={
+        <>
+          <div>
+            Detailed sub-topics across Quantum Computing, Artificial Intelligence
+            & High Performance Computing
+          </div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "18px",
+              lineHeight: "1.9",
+              marginTop: "12px",
+              color: "rgba(255,255,255,0.75)"
+            }}
+          >
+            क्वांटम संगणन, कृत्रिम बुद्धिमत्ता आणि उच्च कार्यक्षमता संगणन
+            या क्षेत्रांतील विविध उपविषयांची सविस्तर माहिती
+          </div>
+        </>
+      }
+
+      badge={
+        <>
+          <span>DOMAINS & SCOPE</span>
+
+          <span
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              marginLeft: "12px"
+            }}
+          >
+            तांत्रिक विभाग आणि व्याप्ती
+          </span>
+        </>
+      }
     >
       <div className="row g-4 mb-5">
 

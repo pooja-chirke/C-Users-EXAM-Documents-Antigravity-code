@@ -10,6 +10,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../../layouts/MainLayout';
+
 const workshopDescription = [
   "आजच्या डिजिटल युगामध्ये अभियांत्रिकी शिक्षण संस्थांनी शिक्षक, संशोधक आणि विद्यार्थ्यांना समांतर संगणन, उच्च कार्यक्षमता संगणन, कृत्रिम बुद्धिमत्ता, ग्राफिक्स प्रक्रिया आधारित संगणन आणि क्वांटम संगणन यांसारख्या प्रगत संगणन तंत्रज्ञानाचे ज्ञान व प्रात्यक्षिक अनुभव देणे आवश्यक झाले आहे.",
 
@@ -46,9 +47,63 @@ const objectives = [
 export const AboutConferencePage = () => {
   return (
     <MainLayout
-      title="About SAQC 2027 Conference"
-      subtitle="International Conference on Quantum Computing, Artificial Intelligence and High Performance Computing"
-      badge="ABOUT THE CONFERENCE"
+      title={
+        <>
+          <div>About SAQC 2027 Conference</div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "32px",
+              lineHeight: "1.6",
+              marginTop: "8px",
+              color: "#ffffff"
+            }}
+          >
+            SAQC २०२७ परिषदेविषयी
+          </div>
+        </>
+      }
+
+      subtitle={
+        <>
+          <div>
+            International Conference on Quantum Computing, Artificial Intelligence
+            and High Performance Computing
+          </div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "18px",
+              lineHeight: "1.9",
+              marginTop: "12px",
+              color: "rgba(255,255,255,0.75)"
+            }}
+          >
+            क्वांटम संगणन, कृत्रिम बुद्धिमत्ता आणि उच्च कार्यक्षमता
+            संगणनावरील आंतरराष्ट्रीय परिषद
+          </div>
+        </>
+      }
+
+      badge={
+        <>
+          <span>ABOUT THE CONFERENCE</span>
+
+          <span
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              marginLeft: "12px"
+            }}
+          >
+            परिषदेविषयी
+          </span>
+        </>
+      }
     >
       <div className="row g-4 align-items-center mb-5">
         <div className="col-lg-7">
@@ -390,20 +445,73 @@ export const AboutConferencePage = () => {
       </div>
       {/* CTA Section */}
       <div className="bg-vjti-navy text-white rounded-4 p-5 text-center shadow-sm">
-        <h3 className="fw-bold font-heading text-white mb-3">Participate in HOC 2027</h3>
-        <p className="text-white-50 max-w-2xl mx-auto mb-4 fs-6">
+
+        <h3 className="fw-bold font-heading text-white mb-3">
+          Participate in SAQC 2027
+        </h3>
+
+        <h5
+          className="fw-bold text-vjti-gold mb-3"
+          style={{
+            fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+            lineHeight: "1.8"
+          }}
+        >
+          SAQC २०२७ मध्ये सहभागी व्हा
+        </h5>
+
+        <p className="text-white-50 max-w-2xl mx-auto mb-2 fs-6">
           Submit your original research paper or register as a conference delegate.
         </p>
-        <div className="d-flex justify-content-center gap-3">
-          <Link to="/submission" className="btn btn-vjti-gold fw-bold px-4">
-            Submit Paper
+
+        <p
+          className="text-white-50 max-w-2xl mx-auto mb-4 fs-6"
+          style={{
+            fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+            lineHeight: "1.9"
+          }}
+        >
+          आपला मौलिक संशोधन लेख सादर करा किंवा परिषद प्रतिनिधी म्हणून नोंदणी करा.
+        </p>
+
+        <div className="d-flex justify-content-center gap-3 flex-wrap">
+
+          {/* Submit Paper */}
+          <Link
+            to="/submission"
+            className="btn btn-vjti-gold fw-bold px-4"
+          >
+            <span>Submit Paper</span>
+            <span
+              className="ms-2"
+              style={{
+                fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
+              }}
+            >
+              संशोधन लेख सादर करा
+            </span>
           </Link>
-          <Link to="/registration" className="btn btn-outline-light fw-semibold px-4">
-            Registration Fees
+
+          {/* Registration Fees */}
+          <Link
+            to="/registration"
+            className="btn btn-outline-light fw-semibold px-4"
+          >
+            <span>Registration Fees</span>
+            <span
+              className="ms-2"
+              style={{
+                fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
+              }}
+            >
+              नोंदणी शुल्क
+            </span>
           </Link>
+
         </div>
       </div>
-    </MainLayout >
+
+    </MainLayout>
   );
 };
 

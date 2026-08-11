@@ -43,9 +43,63 @@ export const KeynoteSpeakersPage = () => {
 
   return (
     <MainLayout
-      title="Keynote Speakers"
-      subtitle="World-renowned international experts delivering keynote addresses at VJTI HOC 2027"
-      badge="KEYNOTE ADDRESSES"
+      title={
+        <>
+          <div>Keynote Speakers</div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "32px",
+              lineHeight: "1.6",
+              marginTop: "8px",
+              color: "#ffffff"
+            }}
+          >
+            प्रमुख वक्ते
+          </div>
+        </>
+      }
+
+      subtitle={
+        <>
+          <div>
+            World-renowned international experts delivering keynote addresses at
+            VJTI SAQC 2027
+          </div>
+
+          <div
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              fontSize: "18px",
+              lineHeight: "1.9",
+              marginTop: "12px",
+              color: "rgba(255,255,255,0.75)"
+            }}
+          >
+            VJTI SAQC 2027 मध्ये प्रमुख व्याख्याने देणारे जागतिक स्तरावरील
+            आंतरराष्ट्रीय तज्ज्ञ
+          </div>
+        </>
+      }
+
+      badge={
+        <>
+          <span>KEYNOTE ADDRESSES</span>
+
+          <span
+            style={{
+              fontFamily:
+                "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
+              marginLeft: "12px"
+            }}
+          >
+            प्रमुख व्याख्याने
+          </span>
+        </>
+      }
     >
       <div className="row g-4 mb-5">
         {speakers.map((speaker, idx) => (
@@ -53,7 +107,7 @@ export const KeynoteSpeakersPage = () => {
             <div className="card border-0 shadow-sm rounded-4 card-hoc bg-white overflow-hidden">
               <div className="card-body p-4 p-lg-5">
                 <div className="row align-items-center g-4">
-                  
+
                   {/* Speaker Avatar & Bio Header */}
                   <div className="col-lg-4 text-center text-lg-start border-lg-end pr-lg-4">
                     <div className="bg-vjti-navy text-vjti-gold p-4 rounded-circle d-inline-flex mb-3 shadow" style={{ width: '80px', height: '80px' }}>

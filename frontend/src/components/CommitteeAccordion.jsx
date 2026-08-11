@@ -1,47 +1,353 @@
-import React from 'react';
+import React from "react";
+import "./CommitteeAccordion.css";
 
-const CommitteeAccordion = () => (
-  <div className="accordion" id="committeeAccordion">
-    {/* Chief Patrons */}
-    <div className="accordion-item">
-      <h2 className="accordion-header" id="headingPatrons">
-        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatrons" aria-expanded="true" aria-controls="collapsePatrons">
-          Chief Patrons
-        </button>
-      </h2>
-      <div id="collapsePatrons" className="accordion-collapse collapse show" aria-labelledby="headingPatrons" data-bs-parent="#committeeAccordion">
-        <div className="accordion-body">
-          <ul className="list-unstyled">
-            <li><strong>Shri.B.Venugopal Reddy</strong> (IAS - Maharashtra - 1994, Hon'ble Addl.Chief Secretary) </li>
-            <li><strong>Dr.Pramod Naik</strong>  (Hon'ble Minister for Technical & Higher Education, Maharashtra State)</li>
-            <li><strong>Dr. Sudhir Mehta</strong>  (Chairperson, BoG, VJTI)</li>
-            <li><strong>Dr. S. D. Kore</strong> (Director, VJTI)</li>
-            <li><strong>Dr. Sunil Luthra</strong> (Director of AICTE ,Delhi )</li>
+// =========================================================
+// COMMITTEE PHOTOS
+// =========================================================
 
-          </ul>
+import venugopalReddy from "../assets/committee/b-venugopal-reddy.jpg";
+import pramodNaik from "../assets/committee/pramod-naik.jpg";
+import sudhirMehta from "../assets/committee/sudhir-mehta.jpg";
+import sdkore from "../assets/committee/sd-kore.jpg";
+import sunilLuthra from "../assets/committee/Sunil-luthra.jpg";
+import stShingade from "../assets/committee/st-shingade.jpg";
+import vbNikam from "../assets/committee/vb-nikam.jpg";
+
+// =========================================================
+// CHIEF PATRONS
+// =========================================================
+
+const chiefPatrons = [
+  {
+    name: "Shri. B. Venugopal Reddy",
+    marathiName: "श्री. बी. वेणुगोपाल रेड्डी",
+
+    designation: "IAS - Maharashtra - 1994",
+    marathiDesignation: "भा.प्र.से. - महाराष्ट्र - १९९४",
+
+    role: "Hon'ble Addl. Chief Secretary",
+    marathiRole: "माननीय अतिरिक्त मुख्य सचिव",
+
+    image: venugopalReddy,
+  },
+
+  {
+    name: "Dr. Pramod Naik",
+    marathiName: "डॉ. प्रमोद नाईक",
+
+    designation: "Hon'ble Minister for Technical & Higher Education",
+    marathiDesignation: "माननीय तंत्रशिक्षण व उच्च शिक्षण मंत्री",
+
+    role: "Maharashtra State",
+    marathiRole: "महाराष्ट्र राज्य",
+
+    image: pramodNaik,
+  },
+
+  {
+    name: "Dr. Sudhir Mehta",
+    marathiName: "डॉ. सुधीर मेहता",
+
+    designation: "Chairperson, BoG",
+    marathiDesignation: "अध्यक्ष, प्रशासकीय मंडळ",
+
+    role: "VJTI",
+    marathiRole: "व्हीजेटीआय",
+
+    image: sudhirMehta,
+  },
+
+  {
+    name: "Dr. S. D. Kore",
+    marathiName: "डॉ. एस. डी. कोरे",
+
+    designation: "Director",
+    marathiDesignation: "संचालक",
+
+    role: "VJTI",
+    marathiRole: "व्हीजेटीआय",
+
+    image: sdkore,
+  },
+
+  {
+    name: "Dr. Sunil Luthra",
+    marathiName: "डॉ. सुनील लुथरा",
+
+    designation: "Director of AICTE",
+    marathiDesignation: "संचालक, एआयसीटीई",
+
+    role: "New Delhi",
+    marathiRole: "नवी दिल्ली",
+
+    image: sunilLuthra,
+  },
+];
+
+// =========================================================
+// CONVENERS
+// =========================================================
+
+const conveners = [
+  {
+    name: "Dr. S. T. Shingade",
+    marathiName: "डॉ. एस. टी. शिंगाडे",
+
+    designation: "Assistant Professor",
+    marathiDesignation: "सहाय्यक प्राध्यापक",
+
+    department: "Department of Computer Engineering & IT",
+    marathiDepartment: "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभाग",
+
+    email: "stshingade@ce.vjti.ac.in",
+
+    phone: "+91-8793707873",
+
+    role: "Coordinator, SAQC - VJTI 2027",
+    marathiRole: "समन्वयक, SAQC - VJTI २०२७",
+
+    image: stShingade,
+  },
+
+  {
+    name: "Dr. V. B. Nikam",
+    marathiName: "डॉ. व्ही. बी. निकम",
+
+    designation: "Associate Professor",
+    marathiDesignation: "सहयोगी प्राध्यापक",
+
+    department: "Department of Computer Engineering & IT",
+    marathiDepartment: "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभाग",
+
+    email: "vbnikam@it.vjti.ac.in",
+
+    role: "Co-coordinator, SAQC - VJTI 2027",
+    marathiRole: "सह-समन्वयक, SAQC - VJTI २०२७",
+
+    image: vbNikam,
+  },
+];
+
+// =========================================================
+// COMPONENT
+// =========================================================
+
+const CommitteeAccordion = () => {
+  return (
+    <div className="committee-wrapper">
+
+      {/* ================================================= */}
+      {/* CHIEF PATRONS */}
+      {/* ================================================= */}
+
+      <section className="committee-section">
+
+        <div className="committee-section-title">
+          <div>
+            <div className="committee-title-en">
+              Chief Patrons
+            </div>
+
+            <div className="committee-title-mr">
+              मुख्य संरक्षक
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    {/* Convener */}
-    <div className="accordion-item">
-      <h2 className="accordion-header" id="headingConvener">
-        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConvener" aria-expanded="false" aria-controls="collapseConvener">
-          Convener
-        </button>
-      </h2>
-      <div id="collapseConvener" className="accordion-collapse collapse" aria-labelledby="headingConvener" data-bs-parent="#committeeAccordion">
-        <div className="accordion-body">
-          <p><strong>Dr. S. T. Shingade</strong><br />Assistant Professor<br />Department of Computer Engineering &amp; IT<br />Email: <a href="mailto:stshingade@ce.vjti.ac.in">stshingade@ce.vjti.ac.in</a><br />Phone: +91-8793707873 <br />(Coordinator, SAQC - VJTI 2027) </p>
-          <p><strong>Dr. V.B.Nikam</strong><br />Associate Professor<br />Department of Computer Engineering &amp; IT<br />Email: <a href="mailto:vbnikam@it.vjti.ac.in">vbnikam@it.vjti.ac.in</a><br />(Co-cordinator, SAQC - VJTI 2027)</p>
+        <div className="row g-4">
+
+          {chiefPatrons.map((person, index) => (
+            <div
+              className="col-lg-4 col-md-6"
+              key={index}
+            >
+
+              <div className="committee-mini-card">
+
+                {/* PHOTO */}
+                <div className="committee-mini-photo">
+
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                  />
+
+                </div>
+
+                {/* INFORMATION */}
+                <div className="committee-mini-content">
+
+                  {/* English Name */}
+                  <h5>
+                    {person.name}
+                  </h5>
+
+                  {/* Marathi Name */}
+                  <div className="committee-marathi-name">
+                    {person.marathiName}
+                  </div>
+
+                  {/* English Designation */}
+                  <p className="committee-mini-designation">
+                    {person.designation}
+                  </p>
+
+                  {/* Marathi Designation */}
+                  <p className="committee-mini-marathi">
+                    {person.marathiDesignation}
+                  </p>
+
+                  {/* English Role */}
+                  <p className="committee-mini-role">
+                    {person.role}
+                  </p>
+
+                  {/* Marathi Role */}
+                  <p className="committee-mini-marathi-role">
+                    {person.marathiRole}
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+          ))}
+
         </div>
-      </div>
+
+      </section>
+
+
+      {/* ================================================= */}
+      {/* CONVENERS */}
+      {/* ================================================= */}
+
+      <section className="committee-section mt-5">
+
+        <div className="committee-section-title">
+
+          <div>
+
+            <div className="committee-title-en">
+              Convener
+            </div>
+
+            <div className="committee-title-mr">
+              समन्वयक
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className="row g-4">
+
+          {conveners.map((person, index) => (
+
+            <div
+              className="col-lg-6 col-md-6"
+              key={index}
+            >
+
+              <div className="committee-mini-card convener-mini-card">
+
+                {/* PHOTO */}
+                <div className="committee-mini-photo convener-photo">
+
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                  />
+
+                </div>
+
+
+                {/* INFORMATION */}
+                <div className="committee-mini-content">
+
+                  {/* English Name */}
+                  <h5>
+                    {person.name}
+                  </h5>
+
+                  {/* Marathi Name */}
+                  <div className="committee-marathi-name">
+                    {person.marathiName}
+                  </div>
+
+
+                  {/* English Designation */}
+                  <p className="committee-mini-designation">
+                    {person.designation}
+                  </p>
+
+                  {/* Marathi Designation */}
+                  <p className="committee-mini-marathi">
+                    {person.marathiDesignation}
+                  </p>
+
+
+                  {/* English Department */}
+                  <p className="committee-mini-department">
+                    {person.department}
+                  </p>
+
+                  {/* Marathi Department */}
+                  <p className="committee-mini-marathi">
+                    {person.marathiDepartment}
+                  </p>
+
+
+                  {/* Email */}
+                  <p className="committee-mini-contact">
+
+                    <strong>Email:</strong>{" "}
+
+                    <a href={`mailto:${person.email}`}>
+                      {person.email}
+                    </a>
+
+                  </p>
+
+
+                  {/* Phone */}
+                  {person.phone && (
+                    <p className="committee-mini-contact">
+
+                      <strong>Phone:</strong>{" "}
+
+                      {person.phone}
+
+                    </p>
+                  )}
+
+
+                  {/* English Role */}
+                  <p className="committee-mini-role">
+                    {person.role}
+                  </p>
+
+                  {/* Marathi Role */}
+                  <p className="committee-mini-marathi-role">
+                    {person.marathiRole}
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
+
     </div>
-
-    {/* Organizing Committee */}
-
-  </div>
-
-);
+  );
+};
 
 export default CommitteeAccordion;
