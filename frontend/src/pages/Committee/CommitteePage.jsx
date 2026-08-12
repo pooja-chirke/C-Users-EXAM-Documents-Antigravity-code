@@ -198,6 +198,7 @@ export const CommitteePage = () => {
       photo: arnavShah
     },
 
+
     {
       name: 'Bhagyashri Nivdunge',
       marathiName: 'भाग्यश्री निवडुंगे',
@@ -207,7 +208,18 @@ export const CommitteePage = () => {
       marathiAffiliation:
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ वॉशिंग्टन, अमेरिका',
       photo: bhagyashriNivdunge
+    },
+    {
+      name: 'Gauri Joshi',
+      marathiName: 'गौरी जोशी',
+      designation: 'Backend Engineer',
+      marathiDesignation: 'बॅकएंड अभियंता',
+      affiliation: 'Microsoft / University of San Francisco, USA',
+      marathiAffiliation:
+        'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ सॅन फ्रान्सिस्को, अमेरिका',
+      photo: null
     }
+
   ];
 
   // =======================================================
