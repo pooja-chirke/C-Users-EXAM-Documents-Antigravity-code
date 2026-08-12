@@ -1,9 +1,10 @@
 /**
  * VJTI HOC 2027 - About Conference Page
- * 
+ *
  * Production-ready page component detailing HOC 2027 vision, objectives,
- * Scopus/IEEE indexing guidelines, hybrid presentation modes, and award categories.
- * 
+ * Scopus/IEEE indexing guidelines, hybrid presentation modes, award categories,
+ * and eligible participants.
+ *
  * @file VJTI-HOC-Conference/frontend/src/pages/About/AboutConferencePage.jsx
  */
 
@@ -110,6 +111,7 @@ export const AboutConferencePage = () => {
           <h3 className="fw-bold font-heading text-vjti-maroon mb-3">
             About The Program
           </h3>
+
           <p
             className="text-muted mb-3"
             style={{
@@ -147,9 +149,11 @@ export const AboutConferencePage = () => {
             collaboration, and project-based learning using advanced computing
             technologies.
           </p>
+
           <h4 className="fw-bold text-vjti-maroon mb-3">
             कार्यक्रमाविषयी
           </h4>
+
           <div className="marathi-text">
             {workshopDescription.map((paragraph, index) => (
               <p
@@ -167,19 +171,27 @@ export const AboutConferencePage = () => {
             ))}
           </div>
 
-
-
           <div className="row g-3 pt-3">
 
-            {/* Peer Reviewed Quality */}
-            <div className="col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="card h-100 border-start border-4 border-primary shadow-sm rounded-4">
                 <div className="card-body">
 
-                  <h6 className="fw-bold text-dark mb-2">
+                  <h6 className="fw-bold text-dark mb-1">
                     <i className="bi bi-patch-check-fill text-primary me-2"></i>
                     Peer-Reviewed Quality
                   </h6>
+
+                  <div
+                    className="fw-semibold mb-2"
+                    style={{
+                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+                      color: "#800000",
+                      fontSize: "15px"
+                    }}
+                  >
+                    समकक्ष पुनरावलोकन गुणवत्ता
+                  </div>
 
                   <p className="small text-muted mb-2">
                     Double-blind peer review by an international technical committee to
@@ -203,15 +215,25 @@ export const AboutConferencePage = () => {
               </div>
             </div>
 
-            {/* Best Paper Recognition */}
-            <div className="col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="card h-100 border-start border-4 border-warning shadow-sm rounded-4">
                 <div className="card-body">
 
-                  <h6 className="fw-bold text-dark mb-2">
+                  <h6 className="fw-bold text-dark mb-1">
                     <i className="bi bi-award-fill text-warning me-2"></i>
                     Best Paper Recognition
                   </h6>
+
+                  <div
+                    className="fw-semibold mb-2"
+                    style={{
+                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+                      color: "#800000",
+                      fontSize: "15px"
+                    }}
+                  >
+                    सर्वोत्कृष्ट संशोधन लेख पुरस्कार
+                  </div>
 
                   <p className="small text-muted mb-2">
                     Awards will be presented to outstanding research papers from each
@@ -234,11 +256,56 @@ export const AboutConferencePage = () => {
               </div>
             </div>
 
+            <div className="col-lg-4 col-md-6">
+              <div className="card h-100 border-start border-4 border-success shadow-sm rounded-4">
+                <div className="card-body">
+
+                  <h6 className="fw-bold text-dark mb-1">
+                    <i className="bi bi-people-fill text-success me-2"></i>
+                    Who Can Participate
+                  </h6>
+
+                  <div
+                    className="fw-semibold mb-2"
+                    style={{
+                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+                      color: "#800000",
+                      fontSize: "15px"
+                    }}
+                  >
+                    कोण सहभागी होऊ शकतात?
+                  </div>
+
+                  <p
+                    className="small text-muted mb-2"
+                    style={{
+                      lineHeight: "1.7"
+                    }}
+                  >
+                    Faculty members of AICTE-approved institutions, Research Scholars,
+                    M.Tech/PG Scholars, Research Fellows, and working professionals
+                    from industry.
+                  </p>
+
+                  <p
+                    className="small mb-0"
+                    style={{
+                      fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif",
+                      lineHeight: "1.8",
+                      textAlign: "justify"
+                    }}
+                  >
+                    AICTE मान्यताप्राप्त संस्थांमधील प्राध्यापक, संशोधक,
+                    M.Tech/PG विद्यार्थी, संशोधन फेलो तसेच उद्योग क्षेत्रातील
+                    कार्यरत व्यावसायिक या परिषदेत सहभागी होऊ शकतात.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
           </div>
-
         </div>
-
-        {/* Right Side */}
 
         <div className="col-lg-5">
 
@@ -279,7 +346,7 @@ export const AboutConferencePage = () => {
 
                 <li className="border-bottom border-secondary pb-3 mb-3">
                   <strong>Format</strong><br />
-                  <span> Offline Conference</span><br />
+                  <span>Offline Conference</span><br />
                   <small
                     style={{
                       fontFamily: "'Noto Sans Devanagari','Mukta','Hind',sans-serif"
@@ -301,7 +368,6 @@ export const AboutConferencePage = () => {
                   </small>
                 </li>
 
-
               </ul>
 
             </div>
@@ -312,13 +378,9 @@ export const AboutConferencePage = () => {
 
       </div>
 
-      {/* Conference Objectives Section */}
-      {/* Program Objectives */}
       <div className="card border-0 shadow rounded-4 p-5 mb-5 bg-white">
 
         <div className="card-body">
-
-          {/* Heading */}
 
           <div className="text-center mb-5">
 
@@ -354,8 +416,6 @@ export const AboutConferencePage = () => {
 
           </div>
 
-          {/* Cards */}
-
           <div className="row g-4">
 
             {objectives.map((item, index) => (
@@ -373,8 +433,6 @@ export const AboutConferencePage = () => {
 
                   <div className="card-body d-flex align-items-start p-4">
 
-                    {/* Icon */}
-
                     <div
                       className="rounded-circle d-flex justify-content-center align-items-center me-4"
                       style={{
@@ -387,8 +445,6 @@ export const AboutConferencePage = () => {
                     >
                       <i className={`bi ${item.icon} fs-2`}></i>
                     </div>
-
-                    {/* Text */}
 
                     <div>
 
@@ -443,7 +499,7 @@ export const AboutConferencePage = () => {
         </div>
 
       </div>
-      {/* CTA Section */}
+
       <div className="bg-vjti-navy text-white rounded-4 p-5 text-center shadow-sm">
 
         <h3 className="fw-bold font-heading text-white mb-3">
@@ -476,7 +532,6 @@ export const AboutConferencePage = () => {
 
         <div className="d-flex justify-content-center gap-3 flex-wrap">
 
-          {/* Submit Paper */}
           <Link
             to="/submission"
             className="btn btn-vjti-gold fw-bold px-4"
@@ -492,7 +547,6 @@ export const AboutConferencePage = () => {
             </span>
           </Link>
 
-          {/* Registration Fees */}
           <Link
             to="/registration"
             className="btn btn-outline-light fw-semibold px-4"

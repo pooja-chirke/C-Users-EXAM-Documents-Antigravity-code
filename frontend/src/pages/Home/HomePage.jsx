@@ -4,6 +4,9 @@ import Hero from "../../components/Hero";
 import DateCard from "../../components/DateCard";
 import CommitteeAccordion from "../../components/CommitteeAccordion";
 
+import dtLogo from "../../assets/logos/dt-logo.png";
+import aicteLogo from "../../assets/logos/aicte-logo.png";
+
 import "./HomePage.module.css";
 
 const importantDates = [
@@ -48,17 +51,132 @@ const importantDates = [
 const HomePage = () => {
   return (
     <MainLayout>
-
-      {/* Hero Banner */}
       <Hero />
 
-      {/* Page Content */}
+      <section
+        style={{
+          background: "#ffffff",
+          borderBottom: "1px solid #e5e5e5",
+          padding: "28px 20px",
+        }}
+      >
+        <div className="container">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "55px",
+              flexWrap: "wrap",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                minWidth: "180px",
+              }}
+            >
+              <img
+                src={dtLogo}
+                alt="Department of Technical Education Maharashtra"
+                style={{
+                  maxWidth: "180px",
+                  maxHeight: "85px",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+
+            <div
+              style={{
+                width: "1px",
+                height: "70px",
+                background: "#d6d6d6",
+              }}
+            />
+
+            <div
+              style={{
+                textAlign: "center",
+                minWidth: "220px",
+                padding: "5px 20px",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "13px",
+                  fontWeight: "600",
+                  color: "#777",
+                  letterSpacing: "1px",
+                  marginBottom: "8px",
+                  textTransform: "uppercase",
+                }}
+              >
+                Associated With
+              </div>
+
+              <div
+                style={{
+                  fontSize: "28px",
+                  fontWeight: "800",
+                  color: "#6b3fa0",
+                  letterSpacing: "0.5px",
+                  marginBottom: "4px",
+                }}
+              >
+                VAANI
+              </div>
+
+              <div
+                style={{
+                  fontFamily: "Mangal, Noto Sans Devanagari, sans-serif",
+                  fontSize: "17px",
+                  fontWeight: "600",
+                  color: "#777",
+                }}
+              >
+                वाणीशी संलग्न
+              </div>
+            </div>
+
+            <div
+              style={{
+                width: "1px",
+                height: "70px",
+                background: "#d6d6d6",
+              }}
+            />
+
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                minWidth: "180px",
+              }}
+            >
+              <img
+                src={aicteLogo}
+                alt="AICTE Logo"
+                style={{
+                  maxWidth: "180px",
+                  maxHeight: "85px",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="container py-5">
-
-        {/* Important Dates */}
         <section className="border-top border-bottom py-5">
-
-          {/* English + Marathi Heading */}
           <h2 className="display-6 fw-bold font-heading text-vjti-maroon mb-5">
             Important Dates
             <div
@@ -75,33 +193,22 @@ const HomePage = () => {
           </h2>
 
           <div className="row g-4 justify-content-center">
-
             {importantDates.map((item, idx) => (
               <DateCard
                 key={idx}
-
-                // English
                 event={item.event}
                 date={item.date}
                 badge={item.badge}
-
-                // Marathi
                 marathiEvent={item.marathiEvent}
                 marathiDate={item.marathiDate}
                 marathiBadge={item.marathiBadge}
-
-                // Bootstrap badge class
                 statusClass={item.statusClass}
               />
             ))}
-
           </div>
-
         </section>
 
-        {/* Organizing Committee */}
         <section className="py-5">
-
           <h2 className="display-6 fw-bold font-heading text-vjti-maroon mb-2">
             Conference Leadership
           </h2>
@@ -119,11 +226,8 @@ const HomePage = () => {
           </div>
 
           <CommitteeAccordion />
-
         </section>
-
       </div>
-
     </MainLayout>
   );
 };

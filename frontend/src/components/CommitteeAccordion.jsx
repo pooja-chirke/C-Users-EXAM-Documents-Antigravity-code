@@ -113,11 +113,11 @@ const conveners = [
     name: "Dr. V. B. Nikam",
     marathiName: "डॉ. व्ही. बी. निकम",
 
-    designation: "Associate Professor",
+    designation: "Associate Professor  ",
     marathiDesignation: "सहयोगी प्राध्यापक",
 
-    department: "Department of Computer Engineering & IT",
-    marathiDepartment: "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभाग",
+    department: "Head of the Department of Computer Engineering & Information Technology",
+    marathiDepartment: "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभागाचे विभागप्रमुख",
 
     email: "vbnikam@it.vjti.ac.in",
 
