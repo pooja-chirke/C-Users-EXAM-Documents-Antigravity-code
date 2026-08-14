@@ -19,8 +19,10 @@ import jyotikaAthavale from '../../assets/committee/international-advisory/jyoti
 import dineshRajan from '../../assets/committee/international-advisory/dinesh-rajan.jpg';
 import arnavShah from '../../assets/committee/international-advisory/arnav-shah.jpg';
 import bhagyashriNivdunge from '../../assets/committee/international-advisory/bhagyashri-nivdunge.jpg';
-import gauriJoshi from './assets/GauriJoshi.jpg';
-import crehanSanthumayor from './assets/crehanSanthumayor.jpg';
+
+import gauriJoshi from '../../assets/committee/international-advisory/GauriJoshi.jpg';
+
+import crehanSanthumayor from '../../assets/committee/international-advisory/crehanSanthumayor.jpg';
 // =========================================================
 // NATIONAL ADVISORY BOARD
 // =========================================================
@@ -34,7 +36,7 @@ import padmajaJoshi from '../../assets/committee/national-advisory/padmaja-joshi
 import rhushabhGoradia from '../../assets/committee/national-advisory/rhushabh-goradia.jpg';
 import rushikeshJoshi from '../../assets/committee/national-advisory/rushikesh-joshi.jpg';
 import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.jpg';
-import lakshmiDatarPanat from './assets/lakshmiDatarPanat.jpg';
+import lakshmiDatarPanat from "../../assets/committee/national-advisory/lakshmiDatarPanat.jpg";
 // =========================================================
 // ORGANIZING COMMITTEE SPECIAL PHOTOS
 // =========================================================
