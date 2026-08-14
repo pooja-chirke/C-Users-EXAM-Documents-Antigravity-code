@@ -19,7 +19,8 @@ import jyotikaAthavale from '../../assets/committee/international-advisory/jyoti
 import dineshRajan from '../../assets/committee/international-advisory/dinesh-rajan.jpg';
 import arnavShah from '../../assets/committee/international-advisory/arnav-shah.jpg';
 import bhagyashriNivdunge from '../../assets/committee/international-advisory/bhagyashri-nivdunge.jpg';
-
+import gauriJoshi from './assets/GauriJoshi.jpg';
+import crehanSanthumayor from './assets/crehanSanthumayor.jpg';
 // =========================================================
 // NATIONAL ADVISORY BOARD
 // =========================================================
@@ -33,7 +34,7 @@ import padmajaJoshi from '../../assets/committee/national-advisory/padmaja-joshi
 import rhushabhGoradia from '../../assets/committee/national-advisory/rhushabh-goradia.jpg';
 import rushikeshJoshi from '../../assets/committee/national-advisory/rushikesh-joshi.jpg';
 import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.jpg';
-
+import lakshmiDatarPanat from './assets/lakshmiDatarPanat.jpg';
 // =========================================================
 // ORGANIZING COMMITTEE SPECIAL PHOTOS
 // =========================================================
@@ -217,7 +218,16 @@ export const CommitteePage = () => {
       affiliation: 'Microsoft / University of San Francisco, USA',
       marathiAffiliation:
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ सॅन फ्रान्सिस्को, अमेरिका',
-      photo: null
+      photo: gauriJoshi
+    },
+    {
+      name: 'Crehan Santhumayor',
+      marathiName: 'क्रेहान संथुमयोर',
+      designation: 'Software Engineer',
+      marathiDesignation: 'सॉफ्टवेअर अभियंता',
+      affiliation: 'Amazon Prime Video, California, USA',
+      marathiAffiliation: 'अॅमेझॉन प्राइम व्हिडिओ, कॅलिफोर्निया, अमेरिका',
+      photo: crehanSanthumayor
     }
 
   ];
@@ -315,6 +325,15 @@ export const CommitteePage = () => {
       marathiAffiliation:
         'डॉ. बाबासाहेब आंबेडकर टेक्नॉलॉजिकल युनिव्हर्सिटी',
       photo: laxmanNetak
+    },
+    {
+      name: 'Lakshmi Datar Panat',
+      marathiName: 'लक्ष्मी दातार पणत',
+      designation: 'Researcher',
+      marathiDesignation: 'संशोधक',
+      affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
+      marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
+      photo: lakshmiDatarPanat
     }
   ];
 
