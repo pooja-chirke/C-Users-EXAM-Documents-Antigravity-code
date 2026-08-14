@@ -37,7 +37,7 @@ import rhushabhGoradia from '../../assets/committee/national-advisory/rhushabh-g
 import rushikeshJoshi from '../../assets/committee/national-advisory/rushikesh-joshi.jpg';
 import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.jpg';
 import lakshmiDatarPanat from "../../assets/committee/national-advisory/lakshmiDatarPanat.jpg";
-import ssBhat from "../../assets/committee/national-advisory/ssBhat.jpg";
+import ssBhat from "../../assets/committee/national-advisory/Dr_S_S_Bhat.jpg";
 // =========================================================
 // ORGANIZING COMMITTEE SPECIAL PHOTOS
 // =========================================================
