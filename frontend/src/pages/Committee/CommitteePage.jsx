@@ -37,6 +37,7 @@ import rhushabhGoradia from '../../assets/committee/national-advisory/rhushabh-g
 import rushikeshJoshi from '../../assets/committee/national-advisory/rushikesh-joshi.jpg';
 import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.jpg';
 import lakshmiDatarPanat from "../../assets/committee/national-advisory/lakshmiDatarPanat.jpg";
+import ssBhat from "../../assets/committee/national-advisory/ssBhat.jpg";
 // =========================================================
 // ORGANIZING COMMITTEE SPECIAL PHOTOS
 // =========================================================
@@ -336,6 +337,15 @@ export const CommitteePage = () => {
       affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
       marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
       photo: lakshmiDatarPanat
+    },
+    {
+      name: 'Dr. S. S. Bhat',
+      marathiName: 'डॉ. एस. एस. भट',
+      designation: 'Professor, Electrical Engineering',
+      marathiDesignation: 'प्राध्यापक, विद्युत अभियांत्रिकी',
+      affiliation: 'VNIT Nagpur',
+      marathiAffiliation: 'व्हीएनआयटी, नागपूर',
+      photo: ssBhat
     }
   ];
 
