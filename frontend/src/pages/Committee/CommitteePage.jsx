@@ -116,6 +116,15 @@ export const CommitteePage = () => {
 
   const patrons = [
     {
+      name: 'Dr. Sudhir Mehta',
+      marathiName: 'डॉ. सुधीर मेहता',
+      title: 'Chairperson, Board of Governors, VJTI',
+      marathiTitle: 'अध्यक्ष, प्रशासकीय मंडळ, VJTI',
+      role: 'Chief Patron',
+      marathiRole: 'मुख्य संरक्षक',
+      image: sudhirMehta
+    },
+    {
       name: 'Shri. B. Venugopal Reddy',
       marathiName: 'श्री. बी. वेणुगोपाल रेड्डी',
       title: 'Hon’ble Addl. Chief Secretary',
@@ -135,15 +144,7 @@ export const CommitteePage = () => {
       image: pramodNaik
     },
 
-    {
-      name: 'Dr. Sudhir Mehta',
-      marathiName: 'डॉ. सुधीर मेहता',
-      title: 'Chairperson, Board of Governors, VJTI',
-      marathiTitle: 'अध्यक्ष, प्रशासकीय मंडळ, VJTI',
-      role: 'Chief Patron',
-      marathiRole: 'मुख्य संरक्षक',
-      image: sudhirMehta
-    },
+
 
     {
       name: 'Dr. S. D. Kore',
@@ -172,16 +173,6 @@ export const CommitteePage = () => {
 
   const internationalAdvisory = [
     {
-      name: 'Dr. Jyotika Athavale',
-      marathiName: 'डॉ. ज्योतिका आठवले',
-      designation: 'IEEE CS President-Elect',
-      marathiDesignation: 'IEEE CS अध्यक्ष-नियुक्त',
-      affiliation: 'USA',
-      marathiAffiliation: 'अमेरिका',
-      photo: jyotikaAthavale
-    },
-
-    {
       name: 'Dr. Dinesh Rajan',
       marathiName: 'डॉ. दिनेश राजन',
       designation: 'Lyle School of Engineering',
@@ -189,6 +180,15 @@ export const CommitteePage = () => {
       affiliation: 'USA',
       marathiAffiliation: 'अमेरिका',
       photo: dineshRajan
+    },
+    {
+      name: 'Dr. Jyotika Athavale',
+      marathiName: 'डॉ. ज्योतिका आठवले',
+      designation: 'IEEE CS President-Elect',
+      marathiDesignation: 'IEEE CS अध्यक्ष-नियुक्त',
+      affiliation: 'USA',
+      marathiAffiliation: 'अमेरिका',
+      photo: jyotikaAthavale
     },
 
     {
@@ -284,6 +284,15 @@ export const CommitteePage = () => {
         'COEP टेक्नॉलॉजिकल युनिव्हर्सिटी, पुणे',
       photo: sunilBhirud
     },
+    {
+      name: 'Dr. S. S. Bhat',
+      marathiName: 'डॉ. एस. एस. भट',
+      designation: 'Professor, Electrical Engineering',
+      marathiDesignation: 'प्राध्यापक, विद्युत अभियांत्रिकी',
+      affiliation: 'VNIT Nagpur',
+      marathiAffiliation: 'व्हीएनआयटी, नागपूर',
+      photo: ssBhat
+    },
 
     {
       name: 'Dr. Padmaja Joshi',
@@ -303,6 +312,15 @@ export const CommitteePage = () => {
       affiliation: 'IISER, Pune',
       marathiAffiliation: 'आयआयएसईआर, पुणे',
       photo: nishaKurkure
+    },
+    {
+      name: 'Lakshmi Datar Panat',
+      marathiName: 'लक्ष्मी दातार पणत',
+      designation: 'Researcher',
+      marathiDesignation: 'संशोधक',
+      affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
+      marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
+      photo: lakshmiDatarPanat
     },
 
     {
@@ -328,25 +346,9 @@ export const CommitteePage = () => {
       marathiAffiliation:
         'डॉ. बाबासाहेब आंबेडकर टेक्नॉलॉजिकल युनिव्हर्सिटी',
       photo: laxmanNetak
-    },
-    {
-      name: 'Lakshmi Datar Panat',
-      marathiName: 'लक्ष्मी दातार पणत',
-      designation: 'Researcher',
-      marathiDesignation: 'संशोधक',
-      affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
-      marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
-      photo: lakshmiDatarPanat
-    },
-    {
-      name: 'Dr. S. S. Bhat',
-      marathiName: 'डॉ. एस. एस. भट',
-      designation: 'Professor, Electrical Engineering',
-      marathiDesignation: 'प्राध्यापक, विद्युत अभियांत्रिकी',
-      affiliation: 'VNIT Nagpur',
-      marathiAffiliation: 'व्हीएनआयटी, नागपूर',
-      photo: ssBhat
     }
+
+
   ];
 
   // =======================================================
@@ -370,27 +372,6 @@ export const CommitteePage = () => {
       marathiDesignation: 'सहयोगी प्राध्यापक',
       photo: 'pm-chawan.jpg'
     },
-
-    {
-      name: 'Prof. S. C. Shrawne',
-      marathiName: 'प्रा. एस. सी. श्रावणे',
-      designation: 'Assistant Professor',
-      marathiDesignation: 'सहाय्यक प्राध्यापक',
-      photo: 'sc-shrawne.jpg'
-    },
-
-    // -------------------------
-    // SPECIAL FACULTY
-    // -------------------------
-
-    {
-      name: 'Dr. S. S. Udmale',
-      marathiName: 'डॉ. एस. एस. उडमले',
-      designation: 'Assistant Professor',
-      marathiDesignation: 'सहाय्यक प्राध्यापक',
-      image: ssUdmale
-    },
-
     {
       name: 'Dr. M. R. Shirole',
       marathiName: 'डॉ. एम. आर. शिरोळे',
@@ -407,6 +388,32 @@ export const CommitteePage = () => {
       image: mmChandane
     },
 
+    {
+      name: 'Prof. S. C. Shrawne',
+      marathiName: 'प्रा. एस. सी. श्रावणे',
+      designation: 'Assistant Professor',
+      marathiDesignation: 'सहाय्यक प्राध्यापक',
+      photo: 'sc-shrawne.jpg'
+    },
+    {
+      name: 'Dr. V. K. Sambhe',
+      marathiName: 'डॉ. व्ही. के. सांभे',
+      designation: 'Assistant Professor',
+      marathiDesignation: 'सहाय्यक प्राध्यापक',
+      photo: 'vk-sambhe.jpg'
+    },
+
+    {
+      name: 'Dr. S. S. Udmale',
+      marathiName: 'डॉ. एस. एस. उडमले',
+      designation: 'Assistant Professor',
+      marathiDesignation: 'सहाय्यक प्राध्यापक',
+      image: ssUdmale
+    },
+
+
+
+
     // -------------------------
     // FACULTY
     // -------------------------
@@ -417,6 +424,13 @@ export const CommitteePage = () => {
       designation: 'Assistant Professor',
       marathiDesignation: 'सहाय्यक प्राध्यापक',
       photo: 'mu-kulkarni.jpg'
+    },
+    {
+      name: 'Prof. K. K. Joshi',
+      marathiName: 'प्रा. के. के. जोशी',
+      designation: 'Assistant Professor',
+      marathiDesignation: 'सहाय्यक प्राध्यापक',
+      photo: null
     },
 
     {
@@ -451,13 +465,6 @@ export const CommitteePage = () => {
       photo: 'sa-khedkar.jpg'
     },
 
-    {
-      name: 'Prof. K. K. Joshi',
-      marathiName: 'प्रा. के. के. जोशी',
-      designation: 'Assistant Professor',
-      marathiDesignation: 'सहाय्यक प्राध्यापक',
-      photo: null
-    },
 
     {
       name: 'Prof. S. S. Lachure',
@@ -467,13 +474,7 @@ export const CommitteePage = () => {
       photo: 'ss-lachure.jpg'
     },
 
-    {
-      name: 'Dr. V. K. Sambhe',
-      marathiName: 'डॉ. व्ही. के. सांभे',
-      designation: 'Assistant Professor',
-      marathiDesignation: 'सहाय्यक प्राध्यापक',
-      photo: 'vk-sambhe.jpg'
-    },
+
 
     // -------------------------
     // TENURE FACULTY
@@ -609,15 +610,6 @@ export const CommitteePage = () => {
   // =======================================================
 
   const supportTeam = [
-    {
-      name: 'Mr. Omkar Moraye',
-      marathiName: 'श्री. ओंकार मोरये',
-      designation: 'System Engineer',
-      marathiDesignation: 'सिस्टम इंजिनिअर',
-      role: 'System Engineering & Technical Support',
-      marathiRole: 'सिस्टम अभियांत्रिकी आणि तांत्रिक सहाय्य',
-      photo: null
-    },
 
     {
       name: 'Miss. Pooja Chirke',
@@ -628,7 +620,15 @@ export const CommitteePage = () => {
       marathiRole: 'परिषद समन्वय आणि तांत्रिक सहाय्य',
       image: poojaChirke
     },
-
+    {
+      name: 'Mr. Omkar Moraye',
+      marathiName: 'श्री. ओंकार मोरये',
+      designation: 'System Engineer',
+      marathiDesignation: 'सिस्टम इंजिनिअर',
+      role: 'System Engineering & Technical Support',
+      marathiRole: 'सिस्टम अभियांत्रिकी आणि तांत्रिक सहाय्य',
+      photo: null
+    },
     {
       name: 'Mr. Pratik Desai',
       marathiName: 'श्री. प्रतीक देसाई',
