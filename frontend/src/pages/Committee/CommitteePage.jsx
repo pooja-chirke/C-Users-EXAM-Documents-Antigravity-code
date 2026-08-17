@@ -70,7 +70,8 @@ import mmChandane from '../../assets/committee/mm-chandane.jpg';
 // =========================================================
 
 import poojaChirke from '../../assets/committee/support-team/pooja-chirke.jpg';
-
+import omkarMoraye from '../../assets/committee/support-team/omkar-moraye.jpg';
+import samrudhi from '../../assets/committee/support-team/samrudhi.jpg';
 // =========================================================
 // ORGANIZING COMMITTEE DYNAMIC PHOTOS
 // =========================================================
@@ -761,7 +762,7 @@ export const CommitteePage = () => {
   const supportTeam = [
     {
       name: 'Miss. Pooja Chirke',
-      marathiName: 'कु. पूजा चिरके',
+      marathiName: 'कु. पुजा चिरके',
       designation: 'Teaching Assistant',
       marathiDesignation: 'अध्यापन सहाय्यक',
       role: 'Conference Coordination & Technical Support',
@@ -776,7 +777,7 @@ export const CommitteePage = () => {
       marathiDesignation: 'सिस्टम इंजिनिअर',
       role: 'System Engineering & Technical Support',
       marathiRole: 'सिस्टम अभियांत्रिकी आणि तांत्रिक सहाय्य',
-      photo: null
+      image: omkarMoraye
     },
 
     {
@@ -786,7 +787,7 @@ export const CommitteePage = () => {
       marathiDesignation: 'अध्यापन सहाय्यक',
       role: 'Technical & Academic Support',
       marathiRole: 'तांत्रिक आणि शैक्षणिक सहाय्य',
-      photo: null
+      image: null
     },
 
     {
@@ -796,10 +797,9 @@ export const CommitteePage = () => {
       marathiDesignation: 'अध्यापन सहाय्यक',
       role: 'Documentation & Coordination Support',
       marathiRole: 'दस्तऐवजीकरण आणि समन्वय सहाय्य',
-      photo: null
+      image: samrudhi
     }
   ];
-
   // =======================================================
   // PERSON CARDS
   // =======================================================
