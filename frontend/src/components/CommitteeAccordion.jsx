@@ -19,69 +19,54 @@ import vbNikam from "../assets/committee/vb-nikam.jpg";
 
 const chiefPatrons = [
   {
-    name: "Shri. B. Venugopal Reddy",
-    marathiName: "श्री. बी. वेणुगोपाल रेड्डी",
-
-    designation: "IAS - Maharashtra - 1994",
-    marathiDesignation: "भा.प्र.से. - महाराष्ट्र - १९९४",
-
-    role: "Hon'ble Addl. Chief Secretary",
-    marathiRole: "माननीय अतिरिक्त मुख्य सचिव",
-
-    image: venugopalReddy,
+    name: 'Dr. Sudhir Mehta',
+    marathiName: 'डॉ. सुधीर मेहता',
+    title: 'Chairperson, Board of Governors, VJTI',
+    marathiTitle: 'अध्यक्ष, प्रशासकीय मंडळ, VJTI',
+    role: 'Chief Patron',
+    marathiRole: 'मुख्य संरक्षक',
+    image: sudhirMehta
   },
 
   {
-    name: "Dr. Pramod Naik",
-    marathiName: "डॉ. प्रमोद नाईक",
-
-    designation: "Hon'ble Minister for Technical & Higher Education",
-    marathiDesignation: "माननीय तंत्रशिक्षण व उच्च शिक्षण मंत्री",
-
-    role: "Maharashtra State",
-    marathiRole: "महाराष्ट्र राज्य",
-
-    image: pramodNaik,
+    name: 'Shri. B. Venugopal Reddy',
+    marathiName: 'श्री. बी. वेणुगोपाल रेड्डी',
+    title: 'Hon’ble Addl. Chief Secretary',
+    marathiTitle: 'माननीय अतिरिक्त मुख्य सचिव',
+    role: 'Chief Patron',
+    marathiRole: 'मुख्य संरक्षक',
+    image: venugopalReddy
   },
 
   {
-    name: "Dr. Sudhir Mehta",
-    marathiName: "डॉ. सुधीर मेहता",
-
-    designation: "Chairperson, BoG",
-    marathiDesignation: "अध्यक्ष, प्रशासकीय मंडळ",
-
-    role: "VJTI",
-    marathiRole: "व्हीजेटीआय",
-
-    image: sudhirMehta,
+    name: 'Dr. Pramod Naik',
+    marathiName: 'डॉ. प्रमोद नाईक',
+    title: 'Hon’ble Minister for Technical & Higher Education',
+    marathiTitle: 'माननीय तंत्रशिक्षण व उच्च शिक्षण मंत्री',
+    role: 'Chief Patron',
+    marathiRole: 'मुख्य संरक्षक',
+    image: pramodNaik
   },
 
   {
-    name: "Dr. S. D. Kore",
-    marathiName: "डॉ. एस. डी. कोरे",
-
-    designation: "Director",
-    marathiDesignation: "संचालक",
-
-    role: "VJTI",
-    marathiRole: "व्हीजेटीआय",
-
-    image: sdkore,
+    name: 'Dr. S. D. Kore',
+    marathiName: 'डॉ. एस. डी. कोरे',
+    title: 'Director, VJTI',
+    marathiTitle: 'संचालक, VJTI',
+    role: 'Chief Patron',
+    marathiRole: 'मुख्य संरक्षक',
+    image: sdKore
   },
 
   {
-    name: "Dr. Sunil Luthra",
-    marathiName: "डॉ. सुनील लुथरा",
-
-    designation: "Director of AICTE",
-    marathiDesignation: "संचालक, एआयसीटीई",
-
-    role: "New Delhi",
-    marathiRole: "नवी दिल्ली",
-
-    image: sunilLuthra,
-  },
+    name: 'Dr. Sunil Luthra',
+    marathiName: 'डॉ. सुनील लुथरा',
+    title: 'Director of AICTE, New Delhi',
+    marathiTitle: 'संचालक, एआयसीटीई, नवी दिल्ली',
+    role: 'Chief Patron',
+    marathiRole: 'मुख्य संरक्षक',
+    image: sunilLuthra
+  }
 ];
 
 // =========================================================
