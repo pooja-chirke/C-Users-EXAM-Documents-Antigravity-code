@@ -735,7 +735,7 @@ export const CommitteePage = () => {
 
     {
       name: 'Ms. Riddhi Patil',
-      marathiName: 'कु. ऋद्धी पाटील',
+      marathiName: 'कु.रिद्धी पाटील',
       designation: 'Assistant Professor (Adhoc)',
       marathiDesignation: 'सहाय्यक प्राध्यापक (अॅडहॉक)',
       photo: null
