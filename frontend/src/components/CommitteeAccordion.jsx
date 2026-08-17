@@ -8,7 +8,7 @@ import "./CommitteeAccordion.css";
 import venugopalReddy from "../assets/committee/b-venugopal-reddy.jpg";
 import pramodNaik from "../assets/committee/pramod-naik.jpg";
 import sudhirMehta from "../assets/committee/sudhir-mehta.jpg";
-import sdkore from "../assets/committee/sd-kore.jpg";
+import sdKore from "../assets/committee/sd-kore.jpg";
 import sunilLuthra from "../assets/committee/Sunil-luthra.jpg";
 import stShingade from "../assets/committee/st-shingade.jpg";
 import vbNikam from "../assets/committee/vb-nikam.jpg";
@@ -19,54 +19,54 @@ import vbNikam from "../assets/committee/vb-nikam.jpg";
 
 const chiefPatrons = [
   {
-    name: 'Dr. Sudhir Mehta',
-    marathiName: 'डॉ. सुधीर मेहता',
-    title: 'Chairperson, Board of Governors, VJTI',
-    marathiTitle: 'अध्यक्ष, प्रशासकीय मंडळ, VJTI',
-    role: 'Chief Patron',
-    marathiRole: 'मुख्य संरक्षक',
-    image: sudhirMehta
+    name: "Dr. Sudhir Mehta",
+    marathiName: "डॉ. सुधीर मेहता",
+    title: "Chairperson, Board of Governors, VJTI",
+    marathiTitle: "अध्यक्ष, प्रशासकीय मंडळ, VJTI",
+    role: "Chief Patron",
+    marathiRole: "मुख्य संरक्षक",
+    image: sudhirMehta,
   },
 
   {
-    name: 'Shri. B. Venugopal Reddy',
-    marathiName: 'श्री. बी. वेणुगोपाल रेड्डी',
-    title: 'Hon’ble Addl. Chief Secretary',
-    marathiTitle: 'माननीय अतिरिक्त मुख्य सचिव',
-    role: 'Chief Patron',
-    marathiRole: 'मुख्य संरक्षक',
-    image: venugopalReddy
+    name: "Shri. B. Venugopal Reddy",
+    marathiName: "श्री. बी. वेणुगोपाल रेड्डी",
+    title: "Hon’ble Addl. Chief Secretary",
+    marathiTitle: "माननीय अतिरिक्त मुख्य सचिव",
+    role: "Chief Patron",
+    marathiRole: "मुख्य संरक्षक",
+    image: venugopalReddy,
   },
 
   {
-    name: 'Dr. Pramod Naik',
-    marathiName: 'डॉ. प्रमोद नाईक',
-    title: 'Hon’ble Minister for Technical & Higher Education',
-    marathiTitle: 'माननीय तंत्रशिक्षण व उच्च शिक्षण मंत्री',
-    role: 'Chief Patron',
-    marathiRole: 'मुख्य संरक्षक',
-    image: pramodNaik
+    name: "Dr. Pramod Naik",
+    marathiName: "डॉ. प्रमोद नाईक",
+    title: "Hon’ble Minister for Technical & Higher Education",
+    marathiTitle: "माननीय तंत्रशिक्षण व उच्च शिक्षण मंत्री",
+    role: "Chief Patron",
+    marathiRole: "मुख्य संरक्षक",
+    image: pramodNaik,
   },
 
   {
-    name: 'Dr. S. D. Kore',
-    marathiName: 'डॉ. एस. डी. कोरे',
-    title: 'Director, VJTI',
-    marathiTitle: 'संचालक, VJTI',
-    role: 'Chief Patron',
-    marathiRole: 'मुख्य संरक्षक',
-    image: sdKore
+    name: "Dr. S. D. Kore",
+    marathiName: "डॉ. एस. डी. कोरे",
+    title: "Director, VJTI",
+    marathiTitle: "संचालक, VJTI",
+    role: "Chief Patron",
+    marathiRole: "मुख्य संरक्षक",
+    image: sdKore,
   },
 
   {
-    name: 'Dr. Sunil Luthra',
-    marathiName: 'डॉ. सुनील लुथरा',
-    title: 'Director of AICTE, New Delhi',
-    marathiTitle: 'संचालक, एआयसीटीई, नवी दिल्ली',
-    role: 'Chief Patron',
-    marathiRole: 'मुख्य संरक्षक',
-    image: sunilLuthra
-  }
+    name: "Dr. Sunil Luthra",
+    marathiName: "डॉ. सुनील लुथरा",
+    title: "Director of AICTE, New Delhi",
+    marathiTitle: "संचालक, एआयसीटीई, नवी दिल्ली",
+    role: "Chief Patron",
+    marathiRole: "मुख्य संरक्षक",
+    image: sunilLuthra,
+  },
 ];
 
 // =========================================================
@@ -82,7 +82,8 @@ const conveners = [
     marathiDesignation: "सहाय्यक प्राध्यापक",
 
     department: "Department of Computer Engineering & IT",
-    marathiDepartment: "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभाग",
+    marathiDepartment:
+      "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभाग",
 
     email: "stshingade@ce.vjti.ac.in",
 
@@ -98,11 +99,13 @@ const conveners = [
     name: "Dr. V. B. Nikam",
     marathiName: "डॉ. व्ही. बी. निकम",
 
-    designation: "Associate Professor  ",
+    designation: "Associate Professor",
     marathiDesignation: "सहयोगी प्राध्यापक",
 
-    department: "Head of the Department of Computer Engineering & Information Technology",
-    marathiDepartment: "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभागाचे विभागप्रमुख",
+    department:
+      "Head of the Department of Computer Engineering & Information Technology",
+    marathiDepartment:
+      "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभागाचे विभागप्रमुख",
 
     email: "vbnikam@it.vjti.ac.in",
 
@@ -174,12 +177,12 @@ const CommitteeAccordion = () => {
 
                   {/* English Designation */}
                   <p className="committee-mini-designation">
-                    {person.designation}
+                    {person.title}
                   </p>
 
                   {/* Marathi Designation */}
                   <p className="committee-mini-marathi">
-                    {person.marathiDesignation}
+                    {person.marathiTitle}
                   </p>
 
                   {/* English Role */}
