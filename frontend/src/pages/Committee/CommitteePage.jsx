@@ -419,8 +419,8 @@ export const CommitteePage = () => {
     },
 
     {
-      name: 'Prof. Dr. Amay Karkare',
-      marathiName: 'प्रा. डॉ. अमय करकरे',
+      name: 'Prof.Amay Karkare',
+      marathiName: 'प्रा.अमय करकरे',
       designation: 'Professor, CSE',
       marathiDesignation: 'प्राध्यापक, संगणक विज्ञान व अभियांत्रिकी',
       affiliation: 'IIT Kanpur',
