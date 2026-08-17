@@ -1,7 +1,6 @@
 import React from 'react';
 import MainLayout from '../../layouts/MainLayout';
 
-
 // =========================================================
 // CHIEF PATRONS
 // =========================================================
@@ -54,7 +53,6 @@ import kunjTandon from '../../assets/committee/national-advisory/kunj-tandon.jpg
 import laxmanNetak from '../../assets/committee/national-advisory/laxman-netak.jpg';
 import nishaKurkure from '../../assets/committee/national-advisory/nisha-kurkure.jpg';
 import padmajaJoshi from '../../assets/committee/national-advisory/padmaja-joshi.jpg';
-import rhushabhGoradia from '../../assets/committee/national-advisory/rhushabh-goradia.jpg';
 import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.jpg';
 import lakshmiDatarPanat from '../../assets/committee/national-advisory/lakshmiDatarPanat.jpg';
 import ssBhat from '../../assets/committee/national-advisory/Dr_S_S_Bhat.jpg';
@@ -72,7 +70,6 @@ import mmChandane from '../../assets/committee/mm-chandane.jpg';
 // =========================================================
 
 import poojaChirke from '../../assets/committee/support-team/pooja-chirke.jpg';
-
 
 // =========================================================
 // ORGANIZING COMMITTEE DYNAMIC PHOTOS
@@ -187,9 +184,11 @@ export const CommitteePage = () => {
       image: sunilLuthra
     }
   ];
+
   // =======================================================
   // 2. PATRONS
   // =======================================================
+
   const patrons = [
     {
       name: 'Dr. K. K. Sangle',
@@ -324,9 +323,13 @@ export const CommitteePage = () => {
       marathiDesignation: 'अधिष्ठाता, आयटी पायाभूत सुविधा',
       affiliation: 'VJTI, Mumbai',
       marathiAffiliation: 'व्हीजेटीआय, मुंबई',
-      photo: mrShirole
+
+      // IMPORTANT:
+      // Patron folder image — NOT organizing committee image.
+      photo: patronMrShirole
     }
   ];
+
   // =======================================================
   // 3. INTERNATIONAL ADVISORY BOARD
   // =======================================================
@@ -341,6 +344,7 @@ export const CommitteePage = () => {
       marathiAffiliation: 'अमेरिका',
       photo: dineshRajan
     },
+
     {
       name: 'Dr. Jyotika Athavale',
       marathiName: 'डॉ. ज्योतिका आठवले',
@@ -362,7 +366,6 @@ export const CommitteePage = () => {
       photo: arnavShah
     },
 
-
     {
       name: 'Bhagyashri Nivdunge',
       marathiName: 'भाग्यश्री निवडुंगे',
@@ -373,6 +376,7 @@ export const CommitteePage = () => {
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ वॉशिंग्टन, अमेरिका',
       photo: bhagyashriNivdunge
     },
+
     {
       name: 'Gauri Joshi',
       marathiName: 'गौरी जोशी',
@@ -383,25 +387,24 @@ export const CommitteePage = () => {
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ सॅन फ्रान्सिस्को, अमेरिका',
       photo: gauriJoshi
     },
+
     {
       name: 'Crehan Santhumayor',
       marathiName: 'क्रेहान संथुमयोर',
       designation: 'Software Engineer',
       marathiDesignation: 'सॉफ्टवेअर अभियंता',
       affiliation: 'Amazon Prime Video, California, USA',
-      marathiAffiliation: 'अॅमेझॉन प्राइम व्हिडिओ, कॅलिफोर्निया, अमेरिका',
+      marathiAffiliation:
+        'अॅमेझॉन प्राइम व्हिडिओ, कॅलिफोर्निया, अमेरिका',
       photo: crehanSanthumayor
     }
-
   ];
 
   // =======================================================
-  // 3. NATIONAL ADVISORY BOARD
+  // 4. NATIONAL ADVISORY BOARD
   // =======================================================
 
   const nationalAdvisory = [
-
-
     {
       name: 'Dr. Amay Karkare',
       marathiName: 'डॉ. अमय करकरे',
@@ -435,6 +438,7 @@ export const CommitteePage = () => {
         'COEP टेक्नॉलॉजिकल युनिव्हर्सिटी, पुणे',
       photo: sunilBhirud
     },
+
     {
       name: 'Dr. S. S. Bhat',
       marathiName: 'डॉ. एस. एस. भट',
@@ -464,13 +468,16 @@ export const CommitteePage = () => {
       marathiAffiliation: 'आयआयएसईआर, पुणे',
       photo: nishaKurkure
     },
+
     {
       name: 'Lakshmi Datar Panat',
       marathiName: 'लक्ष्मी दातार पणत',
       designation: 'Researcher',
       marathiDesignation: 'संशोधक',
-      affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
-      marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
+      affiliation:
+        'Centre for Development of Advanced Computing (C-DAC), Pune',
+      marathiAffiliation:
+        'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
       photo: lakshmiDatarPanat
     },
 
@@ -498,16 +505,10 @@ export const CommitteePage = () => {
         'डॉ. बाबासाहेब आंबेडकर टेक्नॉलॉजिकल युनिव्हर्सिटी',
       photo: laxmanNetak
     }
-
-
   ];
 
   // =======================================================
-  // 4. ORGANIZING COMMITTEE
-  // =======================================================
-  //
-  // Udmale, Shirole, Chandane included.
-  // Shingade and V. B. Nikam removed.
+  // 5. ORGANIZING COMMITTEE
   // =======================================================
 
   const organizingCommittee = [
@@ -523,6 +524,7 @@ export const CommitteePage = () => {
       marathiDesignation: 'सहयोगी प्राध्यापक',
       photo: 'pm-chawan.jpg'
     },
+
     {
       name: 'Dr. M. R. Shirole',
       marathiName: 'डॉ. एम. आर. शिरोळे',
@@ -546,6 +548,7 @@ export const CommitteePage = () => {
       marathiDesignation: 'सहाय्यक प्राध्यापक',
       photo: 'sc-shrawne.jpg'
     },
+
     {
       name: 'Dr. V. K. Sambhe',
       marathiName: 'डॉ. व्ही. के. सांभे',
@@ -562,9 +565,6 @@ export const CommitteePage = () => {
       image: ssUdmale
     },
 
-
-
-
     // -------------------------
     // FACULTY
     // -------------------------
@@ -576,6 +576,7 @@ export const CommitteePage = () => {
       marathiDesignation: 'सहाय्यक प्राध्यापक',
       photo: 'mu-kulkarni.jpg'
     },
+
     {
       name: 'Prof. K. K. Joshi',
       marathiName: 'प्रा. के. के. जोशी',
@@ -616,7 +617,6 @@ export const CommitteePage = () => {
       photo: 'sa-khedkar.jpg'
     },
 
-
     {
       name: 'Prof. S. S. Lachure',
       marathiName: 'प्रा. एस. एस. लचुरे',
@@ -624,8 +624,6 @@ export const CommitteePage = () => {
       marathiDesignation: 'सहाय्यक प्राध्यापक',
       photo: 'ss-lachure.jpg'
     },
-
-
 
     // -------------------------
     // TENURE FACULTY
@@ -757,11 +755,10 @@ export const CommitteePage = () => {
   ];
 
   // =======================================================
-  // 5. SUPPORT TEAM
+  // 6. SUPPORT TEAM
   // =======================================================
 
   const supportTeam = [
-
     {
       name: 'Miss. Pooja Chirke',
       marathiName: 'कु. पूजा चिरके',
@@ -771,6 +768,7 @@ export const CommitteePage = () => {
       marathiRole: 'परिषद समन्वय आणि तांत्रिक सहाय्य',
       image: poojaChirke
     },
+
     {
       name: 'Mr. Omkar Moraye',
       marathiName: 'श्री. ओंकार मोरये',
@@ -780,6 +778,7 @@ export const CommitteePage = () => {
       marathiRole: 'सिस्टम अभियांत्रिकी आणि तांत्रिक सहाय्य',
       photo: null
     },
+
     {
       name: 'Mr. Pratik Desai',
       marathiName: 'श्री. प्रतीक देसाई',
@@ -808,9 +807,6 @@ export const CommitteePage = () => {
   const renderPersonCards = (members) => {
     return members.map((member, idx) => {
 
-      // Direct imported image has first priority.
-      // Dynamic organizing photo is second priority.
-
       const image =
         member.image ||
         getOrganizingPhoto(member.photo);
@@ -825,6 +821,7 @@ export const CommitteePage = () => {
             <div className="card-body text-center p-3">
 
               <div className="committee-photo">
+
                 {image ? (
                   <img
                     src={image}
@@ -838,6 +835,7 @@ export const CommitteePage = () => {
                     aria-hidden="true"
                   />
                 )}
+
               </div>
 
               <h6 className="committee-name">
@@ -871,21 +869,23 @@ export const CommitteePage = () => {
   };
 
   // =======================================================
-  // ADVISORY / SUPPORT CARDS
+  // ADVISORY / PATRONS / SUPPORT CARDS
   // =======================================================
 
   const renderSmallCards = (members) => {
     return members.map((member, idx) => {
 
-      // Direct image first.
-      // Then photo field.
-      const image = member.image || member.photo || null;
+      const image =
+        member.image ||
+        member.photo ||
+        null;
 
       return (
         <div
           className="committee-grid-item"
           key={`${member.name}-${idx}`}
         >
+
           <div className="card border-0 shadow-sm rounded-4 bg-white h-100 committee-card">
 
             <div className="card-body text-center p-3">
@@ -893,6 +893,7 @@ export const CommitteePage = () => {
               {/* PHOTO */}
 
               <div className="committee-photo">
+
                 {image ? (
                   <img
                     src={image}
@@ -906,6 +907,7 @@ export const CommitteePage = () => {
                     aria-hidden="true"
                   />
                 )}
+
               </div>
 
               {/* NAME */}
@@ -973,6 +975,7 @@ export const CommitteePage = () => {
             </div>
 
           </div>
+
         </div>
       );
     });
@@ -1029,7 +1032,9 @@ export const CommitteePage = () => {
 
       badge={
         <>
-          <span>CONFERENCE LEADERSHIP</span>
+          <span>
+            CONFERENCE LEADERSHIP
+          </span>
 
           <span
             style={{
@@ -1070,7 +1075,7 @@ export const CommitteePage = () => {
 
         <div className="committee-grid">
 
-          {patrons.map((p, idx) => (
+          {chiefPatrons.map((p, idx) => (
 
             <div
               className="committee-grid-item"
@@ -1156,8 +1161,58 @@ export const CommitteePage = () => {
 
       </section>
 
+
       {/* =====================================================
-          2. INTERNATIONAL ADVISORY BOARD
+          2. PATRONS
+      ====================================================== */}
+
+      <section className="mb-5">
+
+        <div className="text-center mb-4">
+
+          <h3 className="fw-bold font-heading text-vjti-maroon mb-2">
+            Patrons
+          </h3>
+
+          <h5
+            style={{
+              ...marathiFont,
+              color: '#6f42c1',
+              fontWeight: '700'
+            }}
+          >
+            संरक्षक
+          </h5>
+
+          <p className="text-muted small mt-2 mb-1">
+            Distinguished academic and administrative leaders supporting
+            the conference.
+          </p>
+
+          <p
+            className="text-muted small"
+            style={{
+              ...marathiFont,
+              lineHeight: '1.7'
+            }}
+          >
+            परिषदेला मार्गदर्शन व सहकार्य करणारे प्रतिष्ठित
+            शैक्षणिक आणि प्रशासकीय मान्यवर.
+          </p>
+
+        </div>
+
+        <div className="committee-grid">
+
+          {renderSmallCards(patrons)}
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          3. INTERNATIONAL ADVISORY BOARD
       ====================================================== */}
 
       <section className="mb-5">
@@ -1195,13 +1250,16 @@ export const CommitteePage = () => {
         </div>
 
         <div className="committee-grid">
+
           {renderSmallCards(internationalAdvisory)}
+
         </div>
 
       </section>
 
+
       {/* =====================================================
-          3. NATIONAL ADVISORY BOARD
+          4. NATIONAL ADVISORY BOARD
       ====================================================== */}
 
       <section className="mb-5">
@@ -1240,13 +1298,16 @@ export const CommitteePage = () => {
         </div>
 
         <div className="committee-grid">
+
           {renderSmallCards(nationalAdvisory)}
+
         </div>
 
       </section>
 
+
       {/* =====================================================
-          4. ORGANIZING COMMITTEE
+          5. ORGANIZING COMMITTEE
       ====================================================== */}
 
       <section className="mb-5">
@@ -1284,13 +1345,16 @@ export const CommitteePage = () => {
         </div>
 
         <div className="committee-grid">
+
           {renderPersonCards(organizingCommittee)}
+
         </div>
 
       </section>
 
+
       {/* =====================================================
-          5. SUPPORT TEAM
+          6. SUPPORT TEAM
       ====================================================== */}
 
       <section className="mb-5">
@@ -1328,10 +1392,13 @@ export const CommitteePage = () => {
         </div>
 
         <div className="committee-grid">
+
           {renderSmallCards(supportTeam)}
+
         </div>
 
       </section>
+
 
       {/* =====================================================
           CONFERENCE LEADERSHIP NOTE
@@ -1372,6 +1439,7 @@ export const CommitteePage = () => {
 
       </section>
 
+
       {/* =====================================================
           PAGE SPECIFIC CSS
       ====================================================== */}
@@ -1394,6 +1462,7 @@ export const CommitteePage = () => {
           display: flex;
         }
 
+
         /* ================================================
            CARD
         ================================================ */
@@ -1411,6 +1480,7 @@ export const CommitteePage = () => {
           box-shadow:
             0 8px 24px rgba(0, 0, 0, 0.12) !important;
         }
+
 
         /* ================================================
            NORMAL PHOTO
@@ -1436,7 +1506,6 @@ export const CommitteePage = () => {
           align-items: center;
           justify-content: center;
 
-          /* Prevent image from being visually distorted */
           flex-shrink: 0;
         }
 
@@ -1448,21 +1517,10 @@ export const CommitteePage = () => {
 
           object-fit: cover;
 
-          /*
-           * Keeps the face centered.
-           * Change to center 25% if the face appears too low.
-           */
           object-position: center center;
 
-          /*
-           * Browser's normal high-quality image smoothing.
-           * Do NOT use pixelated rendering.
-           */
           image-rendering: auto;
 
-          /*
-           * Prevent unwanted opacity/filter blur.
-           */
           opacity: 1;
 
           filter: none;
@@ -1472,6 +1530,7 @@ export const CommitteePage = () => {
           font-size: 34px;
           color: #800000;
         }
+
 
         /* ================================================
            NAME
@@ -1484,6 +1543,7 @@ export const CommitteePage = () => {
           color: #212529;
           margin-bottom: 4px;
         }
+
 
         /* ================================================
            MARATHI NAME
@@ -1507,6 +1567,7 @@ export const CommitteePage = () => {
           margin-bottom: 6px;
         }
 
+
         /* ================================================
            DESIGNATION
         ================================================ */
@@ -1519,6 +1580,7 @@ export const CommitteePage = () => {
 
           line-height: 1.35;
         }
+
 
         /* ================================================
            MARATHI DESIGNATION
@@ -1541,6 +1603,7 @@ export const CommitteePage = () => {
           margin-top: 2px;
         }
 
+
         /* ================================================
            AFFILIATION
         ================================================ */
@@ -1554,6 +1617,7 @@ export const CommitteePage = () => {
 
           margin-top: 6px;
         }
+
 
         /* ================================================
            MARATHI AFFILIATION / ROLE
@@ -1575,6 +1639,7 @@ export const CommitteePage = () => {
 
           margin-top: 3px;
         }
+
 
         /* ================================================
            CHIEF PATRON PHOTO
@@ -1610,10 +1675,13 @@ export const CommitteePage = () => {
           display: block;
 
           object-fit: cover;
+
           object-position: center center;
 
           image-rendering: auto;
+
           opacity: 1;
+
           filter: none;
         }
 
@@ -1621,6 +1689,7 @@ export const CommitteePage = () => {
           font-size: 55px;
           color: #800000;
         }
+
 
         /* ================================================
            LARGE DESKTOP - 5 CARDS
@@ -1635,6 +1704,7 @@ export const CommitteePage = () => {
 
         }
 
+
         /* ================================================
            LAPTOP - 4 CARDS
         ================================================ */
@@ -1648,6 +1718,7 @@ export const CommitteePage = () => {
 
         }
 
+
         /* ================================================
            TABLET - 3 CARDS
         ================================================ */
@@ -1660,6 +1731,7 @@ export const CommitteePage = () => {
           }
 
         }
+
 
         /* ================================================
            SMALL TABLET - 2 CARDS
@@ -1680,6 +1752,7 @@ export const CommitteePage = () => {
           }
 
         }
+
 
         /* ================================================
            MOBILE - 1 CARD
