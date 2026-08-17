@@ -46,7 +46,6 @@ import crehanSanthumayor from '../../assets/committee/international-advisory/cre
 // =========================================================
 // NATIONAL ADVISORY BOARD
 // =========================================================
-
 import amayKarkare from '../../assets/committee/national-advisory/amay-karkare.jpg';
 import amitSaxena from '../../assets/committee/national-advisory/amit-saxena.jpg';
 import kunjTandon from '../../assets/committee/national-advisory/kunj-tandon.jpg';
@@ -57,6 +56,8 @@ import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.j
 import lakshmiDatarPanat from '../../assets/committee/national-advisory/lakshmiDatarPanat.jpg';
 import ssBhat from '../../assets/committee/national-advisory/Dr_S_S_Bhat.jpg';
 
+import cPNavdeti from '../../assets/committee/national-advisory/c-p-navdeti.jpg';
+import umbarkarAnantkumar from '../../assets/committee/national-advisory/umbarkar-anantkumar.jpg';
 // =========================================================
 // ORGANIZING COMMITTEE SPECIAL PHOTOS
 // =========================================================
@@ -72,6 +73,7 @@ import mmChandane from '../../assets/committee/mm-chandane.jpg';
 import poojaChirke from '../../assets/committee/support-team/pooja-chirke.jpg';
 import omkarMoraye from '../../assets/committee/support-team/omkar-moraye.jpg';
 import samrudhi from '../../assets/committee/support-team/samrudhi.jpg';
+import pratikDesai from '../../assets/committee/support-team/pratik-desai.jpg';
 // =========================================================
 // ORGANIZING COMMITTEE DYNAMIC PHOTOS
 // =========================================================
@@ -178,8 +180,8 @@ export const CommitteePage = () => {
     {
       name: 'Dr. Sunil Luthra',
       marathiName: 'डॉ. सुनील लुथरा',
-      title: 'Director of AICTE, New Delhi',
-      marathiTitle: 'संचालक, एआयसीटीई, नवी दिल्ली',
+      title: 'Director @ All India Council for Technical Education | Research and Training',
+      marathiTitle: 'संचालक, अखिल भारतीय तंत्रशिक्षण परिषद | संशोधन आणि प्रशिक्षण',
       role: 'Chief Patron',
       marathiRole: 'मुख्य संरक्षक',
       image: sunilLuthra
@@ -381,8 +383,8 @@ export const CommitteePage = () => {
     {
       name: 'Gauri Joshi',
       marathiName: 'गौरी जोशी',
-      designation: 'Backend Engineer',
-      marathiDesignation: 'बॅकएंड अभियंता',
+      designation: 'Engineer',
+      marathiDesignation: 'अभियंता',
       affiliation: 'Microsoft / University of San Francisco, USA',
       marathiAffiliation:
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ सॅन फ्रान्सिस्को, अमेरिका',
@@ -407,11 +409,20 @@ export const CommitteePage = () => {
 
   const nationalAdvisory = [
     {
-      name: 'Dr. Amay Karkare',
-      marathiName: 'डॉ. अमय करकरे',
-      designation: 'CSE, IIT Kanpur',
-      marathiDesignation:
-        'संगणक विज्ञान व अभियांत्रिकी, आयआयटी कानपूर',
+      name: 'Prof. Sunil Bhirud',
+      marathiName: 'प्रा. सुनील भिरुड',
+      designation: 'Vice-Chancellor',
+      marathiDesignation: 'कुलगुरू',
+      affiliation: 'COEP Technological University, Pune',
+      marathiAffiliation: 'COEP टेक्नॉलॉजिकल युनिव्हर्सिटी, पुणे',
+      photo: sunilBhirud
+    },
+
+    {
+      name: 'Prof. Dr. Amay Karkare',
+      marathiName: 'प्रा. डॉ. अमय करकरे',
+      designation: 'Professor, CSE',
+      marathiDesignation: 'प्राध्यापक, संगणक विज्ञान व अभियांत्रिकी',
       affiliation: 'IIT Kanpur',
       marathiAffiliation: 'आयआयटी कानपूर',
       photo: amayKarkare
@@ -420,24 +431,11 @@ export const CommitteePage = () => {
     {
       name: 'Kunj Tandon',
       marathiName: 'कुंज टंडन',
-      designation:
-        'CEO, I-Hub Quantum Technologies Foundation',
-      marathiDesignation:
-        'मुख्य कार्यकारी अधिकारी, आय-हब क्वांटम टेक्नॉलॉजीज फाउंडेशन',
+      designation: 'CEO, I-Hub Quantum Technologies Foundation',
+      marathiDesignation: 'मुख्य कार्यकारी अधिकारी, आय-हब क्वांटम टेक्नॉलॉजीज फाउंडेशन',
       affiliation: 'Pune, Maharashtra, India',
       marathiAffiliation: 'पुणे, महाराष्ट्र, भारत',
       photo: kunjTandon
-    },
-
-    {
-      name: 'Prof. Sunil Bhirud',
-      marathiName: 'प्रा. सुनील भिरुड',
-      designation: 'Vice-Chancellor',
-      marathiDesignation: 'कुलगुरू',
-      affiliation: 'COEP Technological University, Pune',
-      marathiAffiliation:
-        'COEP टेक्नॉलॉजिकल युनिव्हर्सिटी, पुणे',
-      photo: sunilBhirud
     },
 
     {
@@ -475,10 +473,8 @@ export const CommitteePage = () => {
       marathiName: 'लक्ष्मी दातार पणत',
       designation: 'Researcher',
       marathiDesignation: 'संशोधक',
-      affiliation:
-        'Centre for Development of Advanced Computing (C-DAC), Pune',
-      marathiAffiliation:
-        'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
+      affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
+      marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
       photo: lakshmiDatarPanat
     },
 
@@ -486,8 +482,7 @@ export const CommitteePage = () => {
       name: 'Amit Saxena',
       marathiName: 'अमित सक्सेना',
       designation: 'Scientist-F / Associate Director',
-      marathiDesignation:
-        'शास्त्रज्ञ-एफ / सहयोगी संचालक',
+      marathiDesignation: 'शास्त्रज्ञ-एफ / सहयोगी संचालक',
       affiliation: 'C-DAC India',
       marathiAffiliation: 'सी-डॅक, भारत',
       photo: amitSaxena
@@ -496,15 +491,31 @@ export const CommitteePage = () => {
     {
       name: 'Prof. Dr. Laxman D. Netak',
       marathiName: 'प्रा. डॉ. लक्ष्मण डी. नेटके',
-      designation:
-        'Professor & Head, Computer Engineering',
-      marathiDesignation:
-        'प्राध्यापक व विभागप्रमुख, संगणक अभियांत्रिकी',
-      affiliation:
-        'Dr. Babasaheb Ambedkar Technological University',
-      marathiAffiliation:
-        'डॉ. बाबासाहेब आंबेडकर टेक्नॉलॉजिकल युनिव्हर्सिटी',
+      designation: 'Professor & Head, Computer Engineering',
+      marathiDesignation: 'प्राध्यापक व विभागप्रमुख, संगणक अभियांत्रिकी',
+      affiliation: 'Dr. Babasaheb Ambedkar Technological University',
+      marathiAffiliation: 'डॉ. बाबासाहेब आंबेडकर टेक्नॉलॉजिकल युनिव्हर्सिटी',
       photo: laxmanNetak
+    },
+
+    {
+      name: 'Dr. C. P. Navdeti',
+      marathiName: 'डॉ. सी. पी. नवडेटी',
+      designation: 'Assistant Professor',
+      marathiDesignation: 'सहाय्यक प्राध्यापक',
+      affiliation: 'Department of Information Technology, SGGS Institute of Engineering and Technology, Nanded',
+      marathiAffiliation: 'माहिती तंत्रज्ञान विभाग, एसजीजीएस इन्स्टिट्यूट ऑफ इंजिनिअरिंग अँड टेक्नॉलॉजी, नांदेड',
+      photo: cPNavdeti
+    },
+
+    {
+      name: 'Dr. Umbarkar Anantkumar Janardan',
+      marathiName: 'डॉ. अंबारकर अनंतकुमार जनार्दन',
+      designation: 'Professor',
+      marathiDesignation: 'प्राध्यापक',
+      affiliation: 'Department of Information Technology, Walchand College of Engineering, Sangli',
+      marathiAffiliation: 'माहिती तंत्रज्ञान विभाग, वालचंद कॉलेज ऑफ इंजिनिअरिंग, सांगली',
+      photo: umbarkarAnantkumar
     }
   ];
 
@@ -583,7 +594,7 @@ export const CommitteePage = () => {
       marathiName: 'प्रा. के. के. जोशी',
       designation: 'Assistant Professor',
       marathiDesignation: 'सहाय्यक प्राध्यापक',
-      photo: null
+      photo: 'k-k-joshi.jpg'
     },
 
     {
@@ -659,7 +670,7 @@ export const CommitteePage = () => {
       marathiName: 'डॉ. रितिका सिंग',
       designation: 'Assistant Professor (Tenure)',
       marathiDesignation: 'सहाय्यक प्राध्यापक (टेन्युअर)',
-      photo: null
+      photo: 'ritika-singh.jpg'
     },
 
     // -------------------------
@@ -695,7 +706,7 @@ export const CommitteePage = () => {
       marathiName: 'कु. हर्षला दलाल',
       designation: 'Assistant Professor (Adhoc)',
       marathiDesignation: 'सहाय्यक प्राध्यापक (अॅडहॉक)',
-      photo: null
+      photo: 'harshala-dalal.jpg'
     },
 
     {
@@ -787,9 +798,8 @@ export const CommitteePage = () => {
       marathiDesignation: 'अध्यापन सहाय्यक',
       role: 'Technical & Academic Support',
       marathiRole: 'तांत्रिक आणि शैक्षणिक सहाय्य',
-      image: null
+      image: pratikDesai
     },
-
     {
       name: 'Miss. Samrudhi',
       marathiName: 'कु. समृद्धी',

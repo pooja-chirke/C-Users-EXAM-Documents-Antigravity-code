@@ -70,8 +70,7 @@ export const AboutConferencePage = () => {
       subtitle={
         <>
           <div>
-            International Conference on Quantum Computing, Artificial Intelligence
-            and High Performance Computing
+            International Conference on Supercomputing,Artificial Intelligence & Quantum Computing
           </div>
 
           <div
@@ -84,8 +83,7 @@ export const AboutConferencePage = () => {
               color: "rgba(255,255,255,0.75)"
             }}
           >
-            क्वांटम संगणन, कृत्रिम बुद्धिमत्ता आणि उच्च कार्यक्षमता
-            संगणनावरील आंतरराष्ट्रीय परिषद
+            सुपरकॉम्प्युटिंग, कृत्रिम बुद्धिमत्ता आणि क्वांटम संगणनावरील आंतरराष्ट्रीय परिषद
           </div>
         </>
       }

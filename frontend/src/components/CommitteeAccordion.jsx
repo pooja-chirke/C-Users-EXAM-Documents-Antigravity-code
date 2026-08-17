@@ -85,7 +85,7 @@ const conveners = [
     marathiDepartment:
       "संगणक अभियांत्रिकी व माहिती तंत्रज्ञान विभाग",
 
-    email: "stshingade@ce.vjti.ac.in",
+    email: "stshingade@it.vjti.ac.in",
 
     phone: "+91-8793707873",
 
