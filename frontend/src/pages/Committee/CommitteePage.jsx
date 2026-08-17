@@ -65,10 +65,11 @@ import umbarkarAnantkumar from '../../assets/committee/national-advisory/umbarka
 import ssUdmale from '../../assets/committee/ss-udmale.jpg';
 import mrShirole from '../../assets/committee/mr-shirole.jpg';
 import mmChandane from '../../assets/committee/mm-chandane.jpg';
+import riddhiPatil from "../../assets/committee/organizing-committee/riddhi-patil.jpg";
 
 // =========================================================
 // SUPPORT TEAM PHOTOS
-// =========================================================
+// =========================================================git status
 
 import poojaChirke from '../../assets/committee/support-team/pooja-chirke.jpg';
 import omkarMoraye from '../../assets/committee/support-team/omkar-moraye.jpg';
@@ -738,7 +739,7 @@ export const CommitteePage = () => {
       marathiName: 'कु.रिद्धी पाटील',
       designation: 'Assistant Professor (Adhoc)',
       marathiDesignation: 'सहाय्यक प्राध्यापक (अॅडहॉक)',
-      photo: null
+      photo: 'riddhi-patil.jpg'
     },
 
     {
