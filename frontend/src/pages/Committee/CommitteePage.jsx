@@ -1,6 +1,7 @@
 import React from 'react';
 import MainLayout from '../../layouts/MainLayout';
 
+
 // =========================================================
 // CHIEF PATRONS
 // =========================================================
@@ -12,6 +13,27 @@ import venugopalReddy from '../../assets/committee/b-venugopal-reddy.jpg';
 import pramodNaik from '../../assets/committee/pramod-naik.jpg';
 
 // =========================================================
+// PATRONS
+// =========================================================
+
+import kkSangle from '../../assets/committee/patrons/kksangle.jpg';
+import anBambole from '../../assets/committee/patrons/anbambole.jpg';
+import saMastud from '../../assets/committee/patrons/saMastud.jpg';
+import avDeshpande from '../../assets/committee/patrons/avdeshpande.jpg';
+import wsRathod from '../../assets/committee/patrons/wsrathod.jpg';
+import vmPhalle from '../../assets/committee/patrons/vmphalle.jpg';
+import syMhaske from '../../assets/committee/patrons/symhaske.jpg';
+import rsKadge from '../../assets/committee/patrons/rskadge.jpg';
+import asWayal from '../../assets/committee/patrons/aswayal.jpg';
+import ssPendhari from '../../assets/committee/patrons/sspendhari.jpg';
+import suranjanaGangopadhyay from '../../assets/committee/patrons/suranjanagangopadhyay.jpg';
+import npGulhane from '../../assets/committee/patrons/npgulhane.jpg';
+
+// IMPORTANT:
+// This is a different image from the organizing committee image.
+import patronMrShirole from '../../assets/committee/patrons/mrshirole.jpg';
+
+// =========================================================
 // INTERNATIONAL ADVISORY BOARD
 // =========================================================
 
@@ -19,10 +41,9 @@ import jyotikaAthavale from '../../assets/committee/international-advisory/jyoti
 import dineshRajan from '../../assets/committee/international-advisory/dinesh-rajan.jpg';
 import arnavShah from '../../assets/committee/international-advisory/arnav-shah.jpg';
 import bhagyashriNivdunge from '../../assets/committee/international-advisory/bhagyashri-nivdunge.jpg';
-
 import gauriJoshi from '../../assets/committee/international-advisory/GauriJoshi.jpg';
-
 import crehanSanthumayor from '../../assets/committee/international-advisory/crehanSanthumayor.jpg';
+
 // =========================================================
 // NATIONAL ADVISORY BOARD
 // =========================================================
@@ -34,10 +55,10 @@ import laxmanNetak from '../../assets/committee/national-advisory/laxman-netak.j
 import nishaKurkure from '../../assets/committee/national-advisory/nisha-kurkure.jpg';
 import padmajaJoshi from '../../assets/committee/national-advisory/padmaja-joshi.jpg';
 import rhushabhGoradia from '../../assets/committee/national-advisory/rhushabh-goradia.jpg';
-import rushikeshJoshi from '../../assets/committee/national-advisory/rushikesh-joshi.jpg';
 import sunilBhirud from '../../assets/committee/national-advisory/sunil-bhirud.jpg';
-import lakshmiDatarPanat from "../../assets/committee/national-advisory/lakshmiDatarPanat.jpg";
-import ssBhat from "../../assets/committee/national-advisory/Dr_S_S_Bhat.jpg";
+import lakshmiDatarPanat from '../../assets/committee/national-advisory/lakshmiDatarPanat.jpg';
+import ssBhat from '../../assets/committee/national-advisory/Dr_S_S_Bhat.jpg';
+
 // =========================================================
 // ORGANIZING COMMITTEE SPECIAL PHOTOS
 // =========================================================
@@ -51,6 +72,7 @@ import mmChandane from '../../assets/committee/mm-chandane.jpg';
 // =========================================================
 
 import poojaChirke from '../../assets/committee/support-team/pooja-chirke.jpg';
+
 
 // =========================================================
 // ORGANIZING COMMITTEE DYNAMIC PHOTOS
@@ -114,7 +136,7 @@ export const CommitteePage = () => {
   // 1. CHIEF PATRONS
   // =======================================================
 
-  const patrons = [
+  const chiefPatrons = [
     {
       name: 'Dr. Sudhir Mehta',
       marathiName: 'डॉ. सुधीर मेहता',
@@ -124,6 +146,7 @@ export const CommitteePage = () => {
       marathiRole: 'मुख्य संरक्षक',
       image: sudhirMehta
     },
+
     {
       name: 'Shri. B. Venugopal Reddy',
       marathiName: 'श्री. बी. वेणुगोपाल रेड्डी',
@@ -143,8 +166,6 @@ export const CommitteePage = () => {
       marathiRole: 'मुख्य संरक्षक',
       image: pramodNaik
     },
-
-
 
     {
       name: 'Dr. S. D. Kore',
@@ -166,9 +187,148 @@ export const CommitteePage = () => {
       image: sunilLuthra
     }
   ];
-
   // =======================================================
-  // 2. INTERNATIONAL ADVISORY BOARD
+  // 2. PATRONS
+  // =======================================================
+  const patrons = [
+    {
+      name: 'Dr. K. K. Sangle',
+      marathiName: 'डॉ. के. के. सांगळे',
+      designation:
+        'Deputy Director (Students, Academics, Finance and Administration)',
+      marathiDesignation:
+        'उपसंचालक (विद्यार्थी, शैक्षणिक, वित्त व प्रशासन)',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: kkSangle
+    },
+
+    {
+      name: 'Dr. A. N. Bambole',
+      marathiName: 'डॉ. ए. एन. बांबोले',
+      designation:
+        'Deputy Director (Infrastructure, Faculty Welfare, Research & Consultancy)',
+      marathiDesignation:
+        'उपसंचालक (पायाभूत सुविधा, प्राध्यापक कल्याण, संशोधन व सल्लागार सेवा)',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: anBambole
+    },
+
+    {
+      name: 'Dr. S. A. Mastud',
+      marathiName: 'डॉ. एस. ए. मस्तुड',
+      designation: 'Registrar',
+      marathiDesignation: 'कुलसचिव',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: saMastud
+    },
+
+    {
+      name: 'Dr. A. V. Deshpande',
+      marathiName: 'डॉ. ए. व्ही. देशपांडे',
+      designation: 'Dean Academic Programmes',
+      marathiDesignation: 'अधिष्ठाता, शैक्षणिक कार्यक्रम',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: avDeshpande
+    },
+
+    {
+      name: 'Dr. W. S. Rathod',
+      marathiName: 'डॉ. डब्ल्यू. एस. राठोड',
+      designation: 'Dean Faculty Welfare',
+      marathiDesignation: 'अधिष्ठाता, प्राध्यापक कल्याण',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: wsRathod
+    },
+
+    {
+      name: 'Dr. V. M. Phalle',
+      marathiName: 'डॉ. व्ही. एम. फाळे',
+      designation: 'Dean Research, Development and Consultancy',
+      marathiDesignation: 'अधिष्ठाता, संशोधन, विकास व सल्लागार सेवा',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: vmPhalle
+    },
+
+    {
+      name: 'Dr. S. Y. Mhaske',
+      marathiName: 'डॉ. एस. वाय. म्हास्के',
+      designation: 'Dean Infrastructure & Maintenance',
+      marathiDesignation: 'अधिष्ठाता, पायाभूत सुविधा व देखभाल',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: syMhaske
+    },
+
+    {
+      name: 'Dr. R. S. Kadge',
+      marathiName: 'डॉ. आर. एस. कडगे',
+      designation: 'Dean Diploma Programmes',
+      marathiDesignation: 'अधिष्ठाता, डिप्लोमा कार्यक्रम',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: rsKadge
+    },
+
+    {
+      name: 'Dr. A. S. Wayal',
+      marathiName: 'डॉ. ए. एस. वायाळ',
+      designation: 'Dean Quality',
+      marathiDesignation: 'अधिष्ठाता, गुणवत्ता',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: asWayal
+    },
+
+    {
+      name: 'Dr. S. S. Pendhari',
+      marathiName: 'डॉ. एस. एस. पेंढारी',
+      designation: 'Dean Infrastructure (New Projects)',
+      marathiDesignation: 'अधिष्ठाता, पायाभूत सुविधा (नवीन प्रकल्प)',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: ssPendhari
+    },
+
+    {
+      name: 'Dr. Suranjana Gangopadhyay',
+      marathiName: 'डॉ. सुरंजना गांगोपाध्याय',
+      designation: 'Dean Student Affairs',
+      marathiDesignation: 'अधिष्ठाता, विद्यार्थी व्यवहार',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: suranjanaGangopadhyay
+    },
+
+    {
+      name: 'Dr. N. P. Gulhane',
+      marathiName: 'डॉ. एन. पी. गुल्हाणे',
+      designation:
+        'Dean Placement, Corporate, Alumni & International Relations',
+      marathiDesignation:
+        'अधिष्ठाता, प्लेसमेंट, कॉर्पोरेट, माजी विद्यार्थी व आंतरराष्ट्रीय संबंध',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: npGulhane
+    },
+
+    {
+      name: 'Dr. M. R. Shirole',
+      marathiName: 'डॉ. एम. आर. शिरोळे',
+      designation: 'Dean IT Infrastructure',
+      marathiDesignation: 'अधिष्ठाता, आयटी पायाभूत सुविधा',
+      affiliation: 'VJTI, Mumbai',
+      marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+      photo: mrShirole
+    }
+  ];
+  // =======================================================
+  // 3. INTERNATIONAL ADVISORY BOARD
   // =======================================================
 
   const internationalAdvisory = [
@@ -240,16 +400,7 @@ export const CommitteePage = () => {
   // =======================================================
 
   const nationalAdvisory = [
-    {
-      name: 'Dr. Rushikesh K. Joshi',
-      marathiName: 'डॉ. रुशिकेश के. जोशी',
-      designation: 'CSE, IIT Bombay',
-      marathiDesignation:
-        'संगणक विज्ञान व अभियांत्रिकी, आयआयटी बॉम्बे',
-      affiliation: 'IIT Bombay',
-      marathiAffiliation: 'आयआयटी बॉम्बे',
-      photo: rushikeshJoshi
-    },
+
 
     {
       name: 'Dr. Amay Karkare',
