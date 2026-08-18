@@ -161,8 +161,8 @@ export const CommitteePage = () => {
     {
       name: 'Dr. Pramod Naik',
       marathiName: 'डॉ. प्रमोद नाईक',
-      title: 'Hon’ble Minister for Technical & Higher Education',
-      marathiTitle: 'माननीय तंत्रशिक्षण व उच्च शिक्षण मंत्री',
+      title: 'Hon. Director of Technical Education, Mumbai',
+      marathiTitle: 'मा.संचालक, तंत्रशिक्षण संचालनालय, मुंबई',
       role: 'Chief Patron',
       marathiRole: 'मुख्य संरक्षक',
       image: pramodNaik
@@ -384,8 +384,8 @@ export const CommitteePage = () => {
     {
       name: 'Gauri Joshi',
       marathiName: 'गौरी जोशी',
-      designation: 'Engineer',
-      marathiDesignation: 'अभियंता',
+      designation: 'Software Engineer',
+      marathiDesignation: 'सॉफ्टवेअर अभियंता',
       affiliation: 'Microsoft / University of San Francisco, USA',
       marathiAffiliation:
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ सॅन फ्रान्सिस्को, अमेरिका',
