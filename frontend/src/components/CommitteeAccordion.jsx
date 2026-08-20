@@ -59,14 +59,15 @@ const chiefPatrons = [
   },
 
   {
-    name: "Dr. Sunil Luthra",
-    marathiName: "डॉ. सुनील लुथरा",
-    title: "Director of AICTE, New Delhi",
-    marathiTitle: "संचालक, एआयसीटीई, नवी दिल्ली",
-    role: "Chief Patron",
-    marathiRole: "मुख्य संरक्षक",
-    image: sunilLuthra,
-  },
+    name: 'Dr. Sunil Luthra',
+    marathiName: 'डॉ. सुनील लुथरा',
+    title: 'Director @ All India Council for Technical Education | Research and Training',
+    marathiTitle: 'संचालक, अखिल भारतीय तंत्रशिक्षण परिषद | संशोधन आणि प्रशिक्षण',
+    role: 'Chief Patron',
+    marathiRole: 'मुख्य संरक्षक',
+    image: sunilLuthra
+  }
+
 ];
 
 // =========================================================

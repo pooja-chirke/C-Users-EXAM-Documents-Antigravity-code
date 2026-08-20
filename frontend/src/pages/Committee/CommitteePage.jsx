@@ -161,10 +161,13 @@ export const CommitteePage = () => {
     {
       name: 'Dr. Pramod Naik',
       marathiName: 'डॉ. प्रमोद नाईक',
-      title: 'Hon. Director of Technical Education, Mumbai',
-      marathiTitle: 'मा.संचालक, तंत्रशिक्षण संचालनालय, मुंबई',
+
+      title: 'Joint Director of Technical Education, Directorate of Technical Education, Maharashtra State, Mumbai',
+      marathiTitle: 'संयुक्त संचालक, तंत्रशिक्षण संचालनालय, महाराष्ट्र राज्य, मुंबई',
+
       role: 'Chief Patron',
       marathiRole: 'मुख्य संरक्षक',
+
       image: pramodNaik
     },
 
@@ -311,12 +314,14 @@ export const CommitteePage = () => {
     {
       name: 'Dr. N. P. Gulhane',
       marathiName: 'डॉ. एन. पी. गुल्हाणे',
-      designation:
-        'Dean Placement, Corporate, Alumni & International Relations',
+
+      designation: 'Dean Placement, Corporate, Alumni & International Relations',
       marathiDesignation:
         'अधिष्ठाता, प्लेसमेंट, कॉर्पोरेट, माजी विद्यार्थी व आंतरराष्ट्रीय संबंध',
+
       affiliation: 'VJTI, Mumbai',
       marathiAffiliation: 'व्हीजेटीआय, मुंबई',
+
       photo: npGulhane
     },
 
@@ -501,11 +506,14 @@ export const CommitteePage = () => {
 
     {
       name: 'Dr. C. P. Navdeti',
-      marathiName: 'डॉ. सी. पी. नवडेटी',
-      designation: 'Assistant Professor',
-      marathiDesignation: 'सहाय्यक प्राध्यापक',
+      marathiName: 'डॉ. सी. पी. नवदेती',
+
+      designation: 'Head of the Department of Information Technology',
+      marathiDesignation: 'माहिती तंत्रज्ञान विभागप्रमुख',
+
       affiliation: 'Department of Information Technology, SGGS Institute of Engineering and Technology, Nanded',
       marathiAffiliation: 'माहिती तंत्रज्ञान विभाग, एसजीजीएस इन्स्टिट्यूट ऑफ इंजिनिअरिंग अँड टेक्नॉलॉजी, नांदेड',
+
       photo: cPNavdeti
     },
 

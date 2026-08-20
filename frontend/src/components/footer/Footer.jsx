@@ -85,7 +85,7 @@ export const Footer = () => {
               </li>
               <li className="d-flex align-items-center gap-2">
                 <i className="bi bi-telephone-fill text-vjti-gold"></i>
-                <span>+363 2265 398 100</span>
+                <span> 2265 398 100 +363 </span>
                 <span>+91 8793707873</span>
               </li>
             </ul>
