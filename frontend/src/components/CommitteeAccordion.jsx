@@ -49,8 +49,8 @@ const chiefPatrons = [
   },
 
   {
-    name: "Dr. S. D. Kore",
-    marathiName: "डॉ. एस. डी. कोरे",
+    name: "Dr. Sachin D. Kore",
+    marathiName: "डॉ. सचिन डी. कोरे",
     title: "Director, VJTI",
     marathiTitle: "संचालक, VJTI",
     role: "Chief Patron",
@@ -76,8 +76,8 @@ const chiefPatrons = [
 
 const conveners = [
   {
-    name: "Dr. S. T. Shingade",
-    marathiName: "डॉ. एस. टी. शिंगाडे",
+    name: "Dr. Sandip T. Shingade",
+    marathiName: "डॉ. संदीप टी. शिंगाडे",
 
     designation: "Assistant Professor",
     marathiDesignation: "सहाय्यक प्राध्यापक",
@@ -97,8 +97,8 @@ const conveners = [
   },
 
   {
-    name: "Dr. V. B. Nikam",
-    marathiName: "डॉ. व्ही. बी. निकम",
+    name: "Dr. Valmik B. Nikam",
+    marathiName: "डॉ. वाल्मिक बी. निकम",
 
     designation: "Associate Professor",
     marathiDesignation: "सहयोगी प्राध्यापक",

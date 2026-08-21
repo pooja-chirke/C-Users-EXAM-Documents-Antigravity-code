@@ -172,8 +172,8 @@ export const CommitteePage = () => {
     },
 
     {
-      name: 'Dr. S. D. Kore',
-      marathiName: 'डॉ. एस. डी. कोरे',
+      name: 'Dr. Sachin D. Kore',
+      marathiName: 'डॉ. सचिन डी. कोरे',
       title: 'Director, VJTI',
       marathiTitle: 'संचालक, VJTI',
       role: 'Chief Patron',
@@ -476,14 +476,15 @@ export const CommitteePage = () => {
 
     {
       name: 'Lakshmi Datar Panat',
-      marathiName: 'लक्ष्मी दातार पणत',
-      designation: 'Researcher',
-      marathiDesignation: 'संशोधक',
-      affiliation: 'Centre for Development of Advanced Computing (C-DAC), Pune',
-      marathiAffiliation: 'सेंटर फॉर डेव्हलपमेंट ऑफ अॅडव्हान्स्ड कम्प्युटिंग (C-DAC), पुणे',
+      marathiName: 'लक्ष्मी पणत',
+      designation: 'Scientist G & Program Director, Artificial Intelligence & Quantum Technology',
+      marathiDesignation: 'शास्त्रज्ञ G व कार्यक्रम संचालक, कृत्रिम बुद्धिमत्ता व क्वांटम तंत्रज्ञान',
+
+      affiliation: 'C-DAC, Pune',
+      marathiAffiliation: 'सी-डैक, पुणे',
+
       photo: lakshmiDatarPanat
     },
-
     {
       name: 'Amit Saxena',
       marathiName: 'अमित सक्सेना',
@@ -505,25 +506,28 @@ export const CommitteePage = () => {
     },
 
     {
-      name: 'Dr. C. P. Navdeti',
-      marathiName: 'डॉ. सी. पी. नवदेती',
+      name: 'Dr. Chandrakant P. Navdeti',
+      marathiName: 'डॉ. चंद्रकांत पी. नवदेती',
 
       designation: 'Head of the Department of Information Technology',
       marathiDesignation: 'माहिती तंत्रज्ञान विभागप्रमुख',
 
-      affiliation: 'Department of Information Technology, SGGS Institute of Engineering and Technology, Nanded',
-      marathiAffiliation: 'माहिती तंत्रज्ञान विभाग, एसजीजीएस इन्स्टिट्यूट ऑफ इंजिनिअरिंग अँड टेक्नॉलॉजी, नांदेड',
+      affiliation: 'SGGSIE&T, Nanded',
+      marathiAffiliation: 'एसजीजीएसआयई&टी, नांदेड',
 
       photo: cPNavdeti
     },
 
     {
-      name: 'Dr. Umbarkar Anantkumar Janardan',
-      marathiName: 'डॉ. अंबारकर अनंतकुमार जनार्दन',
-      designation: 'Professor',
-      marathiDesignation: 'प्राध्यापक',
-      affiliation: 'Department of Information Technology, Walchand College of Engineering, Sangli',
-      marathiAffiliation: 'माहिती तंत्रज्ञान विभाग, वालचंद कॉलेज ऑफ इंजिनिअरिंग, सांगली',
+      name: 'Dr. Anantkumar J. Umbarkar',
+      marathiName: 'डॉ. अनंतकुमार जे. अंबारकर',
+
+      designation: 'Dean Research & Development',
+      marathiDesignation: 'अधिष्ठाता, संशोधन व विकास',
+
+      affiliation: 'Walchand College of Engineering, Sangli',
+      marathiAffiliation: 'वालचंद कॉलेज ऑफ इंजिनिअरिंग, सांगली',
+
       photo: umbarkarAnantkumar
     }
   ];
