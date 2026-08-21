@@ -18,20 +18,20 @@ export const RegistrationFeesPage = () => {
       marathiCategory:
         "AICTE मान्यताप्राप्त संस्थांमधील प्राध्यापक / संशोधक विद्यार्थी",
       indianINR: "₹ 8,000",
-      foreignUSD: "$165",
+      foreignUSD: "$170",
     },
     {
       category: "Industry Participation",
       marathiCategory: "औद्योगिक सहभाग",
       indianINR: "₹ 10,000",
-      foreignUSD: "$165",
+      foreignUSD: "$170",
     },
     {
       category: "AICTE approved Institutes PG Students",
       marathiCategory:
         "AICTE मान्यताप्राप्त संस्थांमधील पदव्युत्तर विद्यार्थी",
       indianINR: "₹ 6,000",
-      foreignUSD: "$125",
+      foreignUSD: "$130",
     },
   ];
 
