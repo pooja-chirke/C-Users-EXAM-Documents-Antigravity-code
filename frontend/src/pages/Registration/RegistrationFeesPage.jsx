@@ -23,7 +23,7 @@ export const RegistrationFeesPage = () => {
     {
       category: "Industry Participation",
       marathiCategory: "औद्योगिक सहभाग",
-      indianINR: "₹ 8,000",
+      indianINR: "₹ 10,000",
       foreignUSD: "$165",
     },
     {
