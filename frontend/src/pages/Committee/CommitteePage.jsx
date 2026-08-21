@@ -389,8 +389,8 @@ export const CommitteePage = () => {
     {
       name: 'Gauri Joshi',
       marathiName: 'गौरी जोशी',
-      designation: 'Software Engineer',
-      marathiDesignation: 'सॉफ्टवेअर अभियंता',
+      designation: 'Software Engineer 2 ',
+      marathiDesignation: 'सॉफ्टवेअर अभियंता 2',
       affiliation: 'Microsoft / University of San Francisco, USA',
       marathiAffiliation:
         'मायक्रोसॉफ्ट / युनिव्हर्सिटी ऑफ सॅन फ्रान्सिस्को, अमेरिका',

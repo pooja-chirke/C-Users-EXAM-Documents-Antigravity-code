@@ -1,7 +1,7 @@
 /**
  * VJTI HOC 2027 - Registration Fees & Guidelines Page
  *
- * Registration categories, fee structure, bank transfer details,
+ * Registration categories, fee structure,
  * fee inclusions and payment proof verification instructions.
  *
  * @file VJTI-HOC-Conference/frontend/src/pages/Registration/RegistrationFeesPage.jsx
@@ -12,27 +12,26 @@ import { Link } from "react-router-dom";
 import MainLayout from "../../layouts/MainLayout";
 
 export const RegistrationFeesPage = () => {
-
   const feeCategories = [
     {
       category: "AICTE approved Institutes Faculty/Research Scholars",
       marathiCategory:
         "AICTE मान्यताप्राप्त संस्थांमधील प्राध्यापक / संशोधक विद्यार्थी",
-      indianINR: "₹ 6,000",
-      foreignUSD: "$120",
+      indianINR: "₹ 8,000",
+      foreignUSD: "$165",
     },
     {
       category: "Industry Participation",
       marathiCategory: "औद्योगिक सहभाग",
       indianINR: "₹ 8,000",
-      foreignUSD: "$180",
+      foreignUSD: "$165",
     },
     {
       category: "AICTE approved Institutes PG Students",
       marathiCategory:
         "AICTE मान्यताप्राप्त संस्थांमधील पदव्युत्तर विद्यार्थी",
-      indianINR: "₹ 5,000",
-      foreignUSD: "$100",
+      indianINR: "₹ 6,000",
+      foreignUSD: "$125",
     },
   ];
 
@@ -49,14 +48,13 @@ export const RegistrationFeesPage = () => {
               fontSize: "32px",
               lineHeight: "1.6",
               marginTop: "8px",
-              color: "#ffffff"
+              color: "#ffffff",
             }}
           >
             नोंदणी शुल्क आणि मार्गदर्शक सूचना
           </div>
         </>
       }
-
       subtitle={
         <>
           <div>
@@ -70,14 +68,13 @@ export const RegistrationFeesPage = () => {
               fontSize: "18px",
               lineHeight: "1.9",
               marginTop: "12px",
-              color: "rgba(255,255,255,0.75)"
+              color: "rgba(255,255,255,0.75)",
             }}
           >
             नोंदणीचे प्रकार, शुल्क संरचना आणि पेमेंटसंबंधी मार्गदर्शक सूचना
           </div>
         </>
       }
-
       badge={
         <>
           <span>REGISTRATION 2027</span>
@@ -86,7 +83,7 @@ export const RegistrationFeesPage = () => {
             style={{
               fontFamily:
                 "'Mangal', 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
-              marginLeft: "12px"
+              marginLeft: "12px",
             }}
           >
             नोंदणी २०२७
@@ -94,12 +91,12 @@ export const RegistrationFeesPage = () => {
         </>
       }
     >
+      {/* =========================================================
+          1. REGISTRATION FEE TABLE
+          ========================================================= */}
 
-      {/* 1. Registration Fee Table */}
       <div className="card border-0 shadow-sm rounded-4 p-4 card-hoc bg-white mb-5">
-
         <div className="card-body">
-
           <h3 className="fw-bold font-heading text-vjti-maroon mb-2">
             Registration Fee Structure
           </h3>
@@ -162,8 +159,8 @@ export const RegistrationFeesPage = () => {
           </p>
 
           {/* Important Free Submission / Registration Note */}
-          <div className="alert alert-warning border-start border-4 border-warning rounded-3 mb-4">
 
+          <div className="alert alert-warning border-start border-4 border-warning rounded-3 mb-4">
             <p className="fw-semibold mb-2">
               Paper submission and registration are free. Upon acceptance,
               conference proceedings charges will apply.
@@ -180,16 +177,14 @@ export const RegistrationFeesPage = () => {
               पेपर सादरीकरण व नोंदणी विनामूल्य आहे. पेपर स्वीकृत झाल्यानंतर
               कॉन्फरन्स प्रोसीडिंगसाठी शुल्क लागू होईल.
             </p>
-
           </div>
 
+          {/* Fee Table */}
+
           <div className="table-responsive">
-
             <table className="table table-hover align-middle mb-0">
-
               <thead className="table-dark bg-vjti-navy text-white">
                 <tr>
-
                   <th>
                     Delegate Category
                     <br />
@@ -228,21 +223,14 @@ export const RegistrationFeesPage = () => {
                       परदेशी प्रतिनिधी
                     </small>
                   </th>
-
                 </tr>
               </thead>
 
               <tbody>
-
                 {feeCategories.map((cat, idx) => (
-
                   <tr key={idx}>
-
                     <td className="fw-semibold text-dark">
-
-                      <div>
-                        {cat.category}
-                      </div>
+                      <div>{cat.category}</div>
 
                       <div
                         className="mt-1"
@@ -256,7 +244,6 @@ export const RegistrationFeesPage = () => {
                       >
                         {cat.marathiCategory}
                       </div>
-
                     </td>
 
                     <td className="fw-semibold text-vjti-maroon">
@@ -266,124 +253,23 @@ export const RegistrationFeesPage = () => {
                     <td className="fw-semibold text-primary">
                       {cat.foreignUSD}
                     </td>
-
                   </tr>
-
                 ))}
-
               </tbody>
-
             </table>
-
           </div>
-
         </div>
       </div>
 
+      {/* =========================================================
+          2. REGISTRATION FEE INCLUSIONS
+          Bank Details section REMOVED
+          ========================================================= */}
 
-      {/* 2. Bank Details & Inclusions */}
       <div className="row g-4 mb-5">
-
-        {/* Bank Details */}
-        <div className="col-lg-6">
-
-          <div className="card border-0 shadow-sm rounded-4 p-4 card-hoc bg-vjti-navy text-white h-100">
-
+        <div className="col-12">
+          <div className="card border-0 shadow-sm rounded-4 p-4 card-hoc bg-light">
             <div className="card-body">
-
-              <h4 className="fw-bold font-heading text-vjti-gold mb-2">
-                <i className="bi bi-bank me-2"></i>
-                VJTI Bank Account Details
-              </h4>
-
-              <h6
-                className="fw-bold mb-3"
-                style={{
-                  fontFamily:
-                    "Mangal, 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
-                  color: "#FFD700",
-                }}
-              >
-                VJTI बँक खात्याचे तपशील
-              </h6>
-
-              <p className="text-white-50 small mb-2">
-                Please transfer registration fees using the official bank
-                details below and retain the Transaction ID / Receipt PDF.
-              </p>
-
-              <p
-                className="text-white-50 small mb-4"
-                style={{
-                  fontFamily:
-                    "Mangal, 'Noto Sans Devanagari', 'Mukta', 'Hind', sans-serif",
-                  lineHeight: "1.9",
-                }}
-              >
-                कृपया खाली दिलेल्या अधिकृत बँक खात्याच्या तपशीलांचा वापर करून
-                शुल्क हस्तांतरित करा आणि व्यवहार क्रमांक / पावतीची PDF प्रत
-                जतन करून ठेवा.
-              </p>
-
-              <ul className="list-unstyled small text-white-50 mb-0">
-
-                <li className="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
-                  <span>Account Name:</span>
-                  <strong className="text-white">
-                    VJTI Conference Account
-                  </strong>
-                </li>
-
-                <li className="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
-                  <span>Bank Name:</span>
-                  <strong className="text-white">
-                    State Bank of India (SBI)
-                  </strong>
-                </li>
-
-                <li className="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
-                  <span>Branch Name:</span>
-                  <strong className="text-white">
-                    VJTI Campus, Matunga Branch
-                  </strong>
-                </li>
-
-                <li className="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
-                  <span>Account Number:</span>
-                  <strong className="text-vjti-gold font-monospace">
-                    30123456789
-                  </strong>
-                </li>
-
-                <li className="d-flex justify-content-between border-bottom border-secondary pb-2 mb-2">
-                  <span>IFSC Code:</span>
-                  <strong className="text-vjti-gold font-monospace">
-                    SBIN0001107
-                  </strong>
-                </li>
-
-                <li className="d-flex justify-content-between pb-1">
-                  <span>Swift Code:</span>
-                  <strong className="text-white font-monospace">
-                    SBININBB107
-                  </strong>
-                </li>
-
-              </ul>
-
-            </div>
-          </div>
-
-        </div>
-
-
-        {/* Registration Fee Inclusions */}
-        <div className="col-lg-6">
-
-          <div className="card border-0 shadow-sm rounded-4 p-4 card-hoc bg-light h-100">
-
-            <div className="card-body">
-
               <h4 className="fw-bold font-heading text-vjti-maroon mb-2">
                 <i className="bi bi-box-seam me-2"></i>
                 Registration Fee Inclusions
@@ -401,6 +287,7 @@ export const RegistrationFeesPage = () => {
               </h6>
 
               <ul className="text-muted small mb-4">
+                {/* 1 */}
 
                 <li className="mb-3">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -419,6 +306,8 @@ export const RegistrationFeesPage = () => {
                   </span>
                 </li>
 
+                {/* 2 */}
+
                 <li className="mb-3">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
                   Official Conference Kit, Souvenir, and Electronic Proceedings
@@ -436,6 +325,8 @@ export const RegistrationFeesPage = () => {
                   </span>
                 </li>
 
+                {/* 3 */}
+
                 <li className="mb-3">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
                   Lunch, High-Tea, and Official Banquet Dinner at VJTI Campus.
@@ -450,6 +341,8 @@ export const RegistrationFeesPage = () => {
                     VJTI परिसरात दुपारचे भोजन, हाय-टी आणि अधिकृत स्नेहभोजन.
                   </span>
                 </li>
+
+                {/* 4 */}
 
                 <li className="mb-3">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -467,13 +360,13 @@ export const RegistrationFeesPage = () => {
                     प्रमाणपत्र.
                   </span>
                 </li>
-
               </ul>
 
+              {/* =====================================================
+                  PAYMENT PROOF
+                  ===================================================== */}
 
-              {/* Payment Proof */}
               <div className="p-3 bg-white rounded-3 border">
-
                 <h6 className="fw-bold text-dark mb-2">
                   Upload Payment Proof
                 </h6>
@@ -511,6 +404,7 @@ export const RegistrationFeesPage = () => {
                   className="btn btn-vjti-maroon btn-sm fw-semibold w-100"
                 >
                   Register Account to Proceed
+
                   <span
                     className="ms-2"
                     style={{
@@ -521,16 +415,11 @@ export const RegistrationFeesPage = () => {
                     पुढे जाण्यासाठी नोंदणी करा
                   </span>
                 </Link>
-
               </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
-
     </MainLayout>
   );
 };

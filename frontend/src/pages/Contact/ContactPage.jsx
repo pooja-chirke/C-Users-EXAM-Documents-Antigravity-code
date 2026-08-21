@@ -251,7 +251,9 @@ export const ContactPage = () => {
                   </h6>
 
                   <span className="small text-white font-monospace">
-                    +363 8793707873
+                    +91 8793707873 ;
+
+                    2265 398 100 +363
                   </span>
 
                   <p className="extra-small text-white-50 mb-1">
